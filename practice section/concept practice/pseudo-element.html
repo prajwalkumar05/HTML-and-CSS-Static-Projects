@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        p::first-letter{
+            color:red;
+            font-size: xx-large;
+        }
+
+        p::first-line{
+            color:blue;
+            font-size: large;
+        }
+
+        p::selection{
+            color:yellow;
+            /* font-size: xx-large; */
+            background-color: chartreuse;
+        }
+
+        p::after{
+            /* color:red;
+            font-size: xx-large; */
+            content: "prajwal";
+        }
+
+    
+    </style>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur dolor minima officia nobis veniam quaerat, provident, optio nulla perspiciatis dolorem corporis aspernatur tenetur, dolore fugiat impedit dicta sit voluptatem itaque!</p>
+</body>
+</html>

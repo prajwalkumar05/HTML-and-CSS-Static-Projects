@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        .con{
+            display: grid;
+            /* grid-gap: 15px; */
+            grid-template-rows: 90vh repeat(5,70vh) 10vh;
+            grid-template-columns: [side-start] 70px [side-end full-start] minmax(60px,1fr) [center-start] repeat(7, [col-star] minmax(min-content,150px) [col-end]) [center-end] minmax(60px,1fr) [full-end];
+        }
+
+        .con > div{
+            /* background-color: lightseagreen; */
+        }
+
+        .box1{
+            grid-row: 1/-1;
+            background-color: linen;
+        }
+
+        .box2{
+            grid-column: full-start/full-end;
+            background-color: yellow;
+        }
+
+        .box7{
+            grid-column: full-start/full-end;
+            background-color: orangered;
+        }
+
+        .box8{
+            grid-column: full-start/full-end;
+            background-color: blue;
+        }
+
+        .box5{
+            grid-column: full-start/full-end;
+            background-color: lime;
+        }
+
+        .box3{
+            grid-column: center-start/center-end;
+            background-color: black;
+        }
+
+        .box4{
+            grid-column: center-start/center-end;
+            background-color: violet;
+        }
+
+        .box6{
+            grid-column: center-start/center-end;
+            background-color: goldenrod;
+        }
+
+
+    </style>
+
+<body>
+    <div class="con">
+        <div class="box1">nav</div>
+        <div class="box2">header</div>
+        <div class="box3">main</div>
+        <div class="box4">main</div>
+        <div class="box5">full</div>
+        <div class="box6">main</div>
+        <div class="box7">full</div>
+        <div class="box8">footer</div>
+    </div>
+</body>
+</html>

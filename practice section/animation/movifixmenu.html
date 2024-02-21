@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+        <style>
+            *{
+                margin:0;
+                padding:0;
+                box-sizing: border-box;
+           } 
+
+           body{
+               padding: 2%;
+               height: 100vh;
+               font-size: 18px;
+           }
+
+           .menu{
+               position: relative;
+           }
+
+           .ani{
+               visibility: hidden;
+               opacity: 0;
+               position: absolute;
+               top: 100%;
+               left: 0;
+               width: 100%;
+               transform: translateY(-2rem);
+               z-index: -1;
+               transition: all 0.4s ease 0s,visibility 0s linear 0.3s, z-index 0s linear 0.1s;
+           }
+
+           .menu:focus .ani,
+           .menu:focus-within .ani,
+           .menu:hover .ani{
+               visibility:visible;
+               opacity: 1;
+               z-index: 1;
+               transform: translateY(0);
+               transition-delay: 0s,0s,0.3s;
+           }
+
+           nav a{
+               color: black;
+               text-decoration: none;
+               padding: 15px 60px;
+           }
+
+           .ani{
+               width: 70%;
+               padding: 15px 30px;
+               font-family: sans-serif;
+           }
+
+           .ani a:hover{
+               background-color: chartreuse;
+           }
+
+           nav a:hover{
+               background: crimson;
+           }
+
+           nav ul,nav ul li{
+               list-style: none;
+               padding: 0;
+               margin: 0;
+           }
+
+           nav > ul{
+               background: chartreuse;
+               text-align: center;
+               height: 60px;
+               align-items: center;
+           }
+
+           nav > ul > li{
+               display: inline-block;
+               border-left: 1px solid black;
+           }
+
+           nav >ul >li:first-child{
+               border-left: none;
+           }
+
+           .ani{
+               background: orangered;
+           }
+
+
+        </style>
+
+<body>
+    <nav>
+        <ul>
+            <li class="menu"><a href="">home</a></li>
+            <li class="menu"><a href="">about</a></li>
+            <li class="menu">
+                <a href="">services</a>
+                <ul class="ani">
+                    <li><a href="">home</a></li>
+                    <li><a href="">home</a></li>
+                    <li><a href="">home</a></li>
+                    <li><a href="">home</a></li>
+                    <li><a href="">home</a></li>
+                    <li><a href="">home</a></li>
+                </ul>
+            </li>
+            <li class="menu"><a href="">home</a></li>
+            <li class="menu"><a href="">about</a></li>
+            
+        </ul>
+    </nav>
+</body>
+</html>

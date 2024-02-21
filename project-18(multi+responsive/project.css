@@ -1,0 +1,477 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+html{
+    scroll-behavior: smooth;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+:root{
+    --primary:#454545;
+    --second: #ffffff;
+    --third:#29CA8E;
+    --fourth:#3F51B5;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin-bottom: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--primary);
+}
+
+ul li{
+    list-style: none;
+}
+
+/* -------------------nav-bar---------- */
+
+.nav-links{
+    position: fixed;
+    top: 0;
+    background-color: var(--second);
+    height: 80px; width: 100%;
+    color: var(--second);
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 12;
+}
+
+.nav-links .logo{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.nav-links ul a{
+    font-size: 0.9rem;
+    padding: 0 0.5rem;
+    font-weight: 300;
+    font-family: 'Assistant', sans-serif;
+} 
+
+.nav-links ul a:hover{
+    background-color: var(--third);
+    border-radius: 0.3rem;
+    color: var(--second);
+}
+
+.nav-links .contact{
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Assistant', sans-serif;
+}
+
+.nav-links .contact i{
+    font-size:1.1rem ;
+    color: var(--third);
+    padding:0.2rem;
+}
+
+/* ---------------backroundimage----------- */
+
+.bgcontent{
+    background-image: url(slider-image3.jpg);
+    height: 90vh; width:100%;
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size: cover;
+    position: relative;
+}
+
+.bgcontenttext{
+    color:#f9f9f9;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 50%;
+}
+
+.bgcontenttext p{
+    font-size: 0.7rem;
+    padding-bottom: 1.8rem;
+}
+
+.bgcontenttext a{
+    font-size: 0.7rem;
+    padding: 0.5rem 2rem;
+    color: var(--second);
+    border: 2px solid var(--second);
+    border-radius: 25px;
+    transition: .2s ease-in-out;
+}
+
+.bgcontenttext a:hover{
+    background-color: var(--second);
+    color: var(--primary);
+}
+
+.show,.hide{
+    font-size: 2rem;
+    color: var(--primary);
+    display: none;
+}
+
+#chk{
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+
+
+/* -------------------------numbers---------- */
+
+.numbers{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0;
+    flex-wrap: wrap;
+}
+
+.numbers .number1{
+    max-width: 25%;
+    border: 1px solid #f0f0f0;
+    padding: 3rem;
+    margin: 0.5rem;
+}
+
+.numbers .number1 h3{
+    display: inline;
+    padding: 0.5rem;
+    background-color: var(--fourth);
+    border-radius: 150px;
+    color: var(--second);
+    
+}
+
+.numbers .number1 p{
+    font-size: 0.8rem;
+    font-weight: 300;
+    font-family: 'Assistant', sans-serif;
+}
+
+.numbers .number1 h2{
+    margin-top: 1.2rem;
+    font-size: 1rem;
+}
+
+
+/* --------------------------------teachers------------------------- */
+
+.teacher{
+    width: 100%;
+    background-color: #f9f9f9;
+    margin: 4rem 0;
+}
+
+.teacher .teacher1{
+    text-align: center;
+}
+
+.teacher .teacher1 h3{
+    font-size:1.1rem;    
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.teacher .teacher1 h4{
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-family: 'Assistant', sans-serif;
+}
+
+.teacher2{
+    font-size: 0.6rem;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+
+
+.teacher2 .teacherimg img{
+    height: 270px;
+    width: 260px;
+    margin: 0.5rem;
+}
+
+.teacher2 .teacherimg {
+   text-align: center;
+   background: var(--second);
+   margin: 0.5rem;
+}
+
+.teacher2 .teacherimg i{
+    font-size: 1rem;
+    padding: 0.5rem 0.8rem;
+}
+
+.teacher2 .teacherimg hr{margin:0 1rem;}
+
+/* -------------------------------------course------------- */
+
+.course{
+    width: 100%;
+    background-color: var(--second);
+    margin: 4rem 0;
+}
+
+.course .course1{text-align: center;}
+
+.course .course1 h3{
+    font-size:1.1rem;    
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.course .course1 h4{
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-family: 'Assistant', sans-serif;
+}
+
+.course2{
+    font-size: 0.6rem;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.course2 .courseimg img{
+    height: 270px;
+    width: 300px;
+    margin: 0.5rem;
+}
+
+.course2 .courseimg{
+   text-align: left;
+   background: #f9f9f9;
+   margin: 0.5rem;
+}
+
+.course2 .courseimg h3{ padding:0 0.9rem;}
+
+.course2 .courseimg h4{
+    width:290px ;
+    font-weight: 400;
+    font-family: 'Assistant', sans-serif;
+    padding:0 0.9rem;  
+}
+
+/* ------------------------------student-reviews-------------- */
+
+.reviews{
+    width: 100%;
+    background-color: #f9f9f9;
+    margin: 4rem 0;
+}
+
+.reviews .reviews1{text-align: center;}
+
+.reviews .reviews1 h3{
+    font-size:1.1rem;    
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.reviews .reviews1 h4{
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-family: 'Assistant', sans-serif;
+}
+
+.reviews2{
+    font-size: 0.6rem;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.reviews2 .reviewsstatement{
+    background-color: var(--second);
+    margin: 0.8rem;
+}
+
+.reviews2 .reviewsstatement p{
+    font-size: 0.7rem;
+    width:290px ;
+    font-weight: 300;
+    font-family: 'Assistant', sans-serif;
+    padding:0.3rem 0.9rem;  
+}
+
+.reviews2 .reviewsstatement .profile{
+    display: flex;
+    padding-top: 0.5rem;
+}
+
+.profileimg img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    margin: 0 0.5rem;
+}
+
+.reviews2 .reviewsstatement .names{ margin: 0 0.5rem;}
+
+.reviews2 .reviewsstatement .star{margin: 0 0.8rem;}
+
+
+/* -------------------------------------------contact-us-------------------------------- */
+
+.contactus{
+    background-color: var(--fourth);
+    color: var(--second);
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contactus .contactus1{padding-right: 2rem;}
+
+.contactus .contactus1 h3{padding: 0 0.8rem;}
+
+.contactus .contactus1 h4{
+    font-size: 0.9rem;
+    font-weight: 300;
+    padding: 0 0.8rem;
+}
+
+
+.contactus .contactus1 input,textarea{
+    display: block;
+    margin: 0.6rem;
+    height: 40px;
+    width: 500px;
+    border-radius: 5px;
+}
+
+.contactus .contactus1 textarea{
+    margin: 0.6rem;
+    height: 200px;
+    width: 500px;
+    border-radius: 5px;
+}
+
+.contactus .contactus1 a{
+    color: var(--fourth);
+    padding: 0.5rem 2rem;
+    font-size: 0.6rem;
+    background-color:var(--second) ;
+    border-radius: 25px;
+    margin: 0 0.8rem;
+    border: 2px solid var(--second);
+}
+
+.contactus .contactus1 a:hover{
+    color: var(--second);
+    background-color: transparent;
+}
+
+.contactus .contactus1 input::placeholder{
+    text-transform: capitalize;
+    padding: 0.5rem;
+}
+
+.contactus .contactus2 img{
+    padding-top: 1rem;
+    height: 480px;
+    max-width: 700px;
+}
+
+/* -------------------------------footer--------------------------- */
+
+.footerlast{
+    background-color: #333;
+    padding: 2rem 0;
+    color: var(--second);
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.footerlast .footer1 {
+    margin-top: 1rem;
+}
+
+.footerlast .footer1 h3{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.footerlast .footer1 p{
+    font-size: 0.6rem;
+    font-weight: 300;
+    font-family: 'Assistant', sans-serif;
+    margin: 0.3rem 0;
+}
+
+.footerlast .footer1 p:hover{
+    background-color: var(--third);
+}
+
+.footerlast .footer1 i{
+    font-size: 0.6rem;
+    padding-right: 0.5rem;
+}
+
+.footerlast .footer1 input{
+    background-color: #333;
+    outline: none;
+    border: 1px solid #000;
+    height: 28px;
+}
+
+.footerlast .footer1 a{
+    font-size: 0.6rem;
+    font-weight: 300;
+    font-family: 'Assistant', sans-serif;
+    padding: 0.2rem 0.8rem;
+    border-radius: 25px;
+    color: var(--second);
+    border: 1px solid var(--second);
+}
+
+.footerlast .footer1 a:hover{
+    background-color: var(--third);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

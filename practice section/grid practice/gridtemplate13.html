@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        .grid{
+            display: grid;
+            grid-gap: 15px;
+            grid-template-rows: 80px 200px 120px repeat(2,70vh) 20vh;
+            grid-template-columns: [full-start] minmax(60px,1fr) [center-start] repeat(3, [col-start] minmax(min-content,1fr) [col-end]) [center-end] minmax(60px,1fr) [full-end];
+        }
+
+        .grid > div{
+            background-color: orange;
+        }
+
+        .box1{
+            grid-column: full-start/full-end;
+        }
+
+        .box2{
+            grid-column: col-start/col-end 1;
+        }
+
+        .box3{
+            grid-column: col-start 2/col-end 2;
+        }
+
+        .box4{
+            grid-column: col-start 3/col-end 3;
+        }
+
+        .box5{
+            grid-column: center-start/center-end;
+        }
+
+        .box6{
+            grid-column: full-start/col-end 2;
+        }
+
+        .box7{
+            grid-column: full-start/col-end 2;
+        }
+
+        .box8{
+            grid-column: full-start/full-end;
+        }
+
+        .nav{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        ul{
+            display: flex;
+            list-style: none;
+        }
+
+        ul li{
+            font-size: 22px;
+            padding: 15px;
+        }
+    </style>
+
+<body>
+    <div class="grid">
+        <div class="box1">
+            <div class="nav">
+                <h1>prajwal</h1>
+                <ul>
+                    <li>home</li>
+                    <li>service</li>
+                    <li>contact</li>
+                    <li>message</li>
+                </ul>
+            </div>
+        </div>
+        <div class="box2">box1</div>
+        <div class="box3">box2</div>
+        <div class="box4">box3</div>
+        <div class="box5"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nesciunt rem suscipit quia consectetur accusamus quos nihil, praesentium asperiores doloremque?</p></div>
+        <div class="box6">main</div>
+        <div class="box7">main</div>
+        <div class="box8">foot</div>
+    </div>
+</body>
+</html>

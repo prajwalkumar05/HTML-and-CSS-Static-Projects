@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+
+        :root{
+            --margin-easy:10px;
+        }
+
+        .row{
+            width: 100%;
+        }
+
+        .onerow{
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .one{
+            background-color: orange;
+        }
+
+
+        .center{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;    
+        }
+
+        .box{
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .box .hello,h4{
+            margin: var(--margin-easy);
+        }
+
+        .hello{
+            color: springgreen;
+            text-transform: capitalize;
+        }
+
+        .hello-2{
+            text-transform: uppercase;
+        }
+
+        section{
+            height: 100vh;
+            width: 100%;
+            background-color: orangered;
+        }
+
+        section p{
+            column-count: 2;
+        }
+
+        ul{
+
+        }
+
+        li{
+            font-size: 30px;
+            list-style: none;
+        }
+
+        :not(:last-child){
+            padding-bottom: 20px;
+        }
+    </style>
+
+<body>
+    <!-- <div class="center">
+        <div class="box">
+            <h3 class="hello hello-2" >prajwal</h3>
+            <h4 class="hello hello-1">kumar</h4>
+        </div>
+    </div> -->
+
+    <div class="row">
+        <div class="onerow">
+            <div class="one">king</div>
+        </div>
+    </div>
+
+    <section>
+        
+        <div class="row">
+            <div class="onerow">
+                <ul>
+                    <li>prajwal kumar</li>
+                    <li>prajwal kumar</li>
+                    <li>prajwal kumar</li>
+                    <li>prajwal kumar</li>
+                    <li>prajwal kumar</li>
+                    <li>prajwal kumar</li>
+                    
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

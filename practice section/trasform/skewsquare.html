@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+   <style>
+        .center{
+            height: 100vh;
+            width: 100%;
+            display: grid;
+            place-content: center;
+            background-color: gray;
+        }
+
+        .box{
+            position: relative;
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+            text-align: center;
+            transform: skewx(35deg);
+            
+        }
+
+        .box::after{
+            content: '';
+            position: absolute;
+            top: 50px;
+            left: -100px;
+            height:100%; 
+            width:50%;
+            background-color:white;
+            transform: skewy(-45deg);
+            background-color: yellow;
+        }
+
+        .box::before{
+            content: '';
+            position: absolute;
+            bottom: -100px;
+            left: -52px;
+            height:50%; 
+            width:100%;
+            background-color:white;
+            transform: skewx(-45deg);
+        }
+   </style>
+
+<body>
+    <div class="center">
+        <div class="box">
+            <h2>Learn html and Css</h2>
+            <h3>how to master in CSS</h3>
+            <p>prajwal</p>
+        </div>
+    </div>
+</body>
+</html>

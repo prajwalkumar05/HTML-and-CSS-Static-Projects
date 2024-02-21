@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 1600px;
+            width: 100%;
+        }
+
+        .row{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 0 20px;
+            margin: 0 20px;
+            /* justify-content: space-between; */
+        }
+
+        .cat{
+            margin: 70px 0;
+            padding: 0 20px;
+            
+        }
+
+        .col-3{
+            flex-basis: 10%;
+             /* min-width: 250px; */
+            margin-bottom: 30px;
+            border: 1px solid black;
+            padding: 0 20px;
+            margin: 0 20px;
+        }
+
+        .pi{
+            width: 90%;
+            height: 100px;
+            background-color: black;
+            margin: 0 20px;
+        }
+
+    </style>
+<body>
+    
+
+    <div class="cat">
+        <div class="row">
+            <div class="col-3">
+                <img src="chefs-01.jpg">
+            </div>
+            <div class="col-3">
+                <img src="chefs-02.jpg">
+            </div>
+            <div class="col-3">
+                <img src="chefs-03.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div class="pi">
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* border: 1px solid red; */
+        
+        }
+
+        body{
+            background-color: rgb(44, 43, 43);
+            color: white;
+           
+           
+        }
+
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+            padding: 40px;
+
+        }
+
+        ul li {
+            list-style: none;
+            display: inline;
+            
+        }
+
+        ul li a{
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+
+        li.pra a{
+            border: 1px solid white;
+        }
+
+        ul li a:hover{
+            border: 1px solid white;
+        }
+
+        .hero{
+            position: absolute;
+            top: 50%;
+            left:50%;
+            transform:translate(-50%,-50%)  ;
+            /* align-items: center; */
+            text-align: center;
+        }
+
+        .hero h1{
+            margin-bottom: 6px;
+        }
+
+        .hero h4{
+            margin-bottom:6px ;
+        }
+        .button{
+            margin-top: 20px;
+            /* margin-left: 25px; */
+            color: white; 
+        }
+
+        .btn {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+
+        .btn:hover{
+            background-color: orange;
+            
+        }
+    </style>
+
+    <header>
+        <div class="first">
+            <h2>prajwal</h2>
+        </div>
+
+        <nav class="row">
+            <ul>
+                <li class="pra"><a href="">HOME</a></li>
+                <li><a href="">SERVICES</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">HELP</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>
+            ARE YOU READY?
+        </h1>
+        <h4>ARE YOU READY TO BUILD A GOOD WEBSITE DESIGN OF YOUR WEB PAGE</h4>
+
+        <div class="button">
+            <a href="" class="btn">LOGIN</a>
+            <a href="" class="btn">SIGN UP</a>
+        </div>
+
+    </div>
+
+   
+
+
+</body>
+</html>

@@ -1,0 +1,569 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary:#fff;
+    --second:#000;
+    --pink:#ff589e;
+    --purple:#8261ee;
+    --gray:#777777;
+    --lite-gray:#f2f2fe;
+}
+
+html{
+    scroll-behavior: smooth;
+    text-transform: capitalize;
+    font-size: 10px;
+    box-sizing: inherit;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+a,li{
+    text-decoration: none;
+    list-style: none;
+}
+
+/* ----------------------------------header---------------------------- */
+
+.heading{
+    height: 95vh;
+    width: 100%;
+    background-image: url(images/banner-bg.png);
+    background-size: cover;
+    position: relative;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+}
+
+.navigationbar{
+    position: fixed;
+    background-color:whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem;
+    height: 7rem;
+    width: 70%;
+    margin: 5rem auto;
+    border-radius: 100px;
+}
+
+.nav_logo{
+    cursor: pointer;
+
+}
+
+.nav_ul{
+    display: flex;
+}
+
+.nav_links{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.nav_links:hover{
+    color: var(--pink);
+}
+
+li:not(:last-child){
+    padding:0 3rem;
+}
+
+/* ---------------------heading-text--------------------- */
+
+.heading_text{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: var(--primary);
+    text-align: center;
+}
+
+.text-primary{
+    font-size: 4rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+    letter-spacing: 3px;
+    animation: primarytext 1s ;
+}
+
+@keyframes primarytext{
+    from{
+        transform: translateY(-2rem);
+        opacity: 0;
+    }
+
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }   
+}
+
+.text-second{
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+    animation: secondtext 1s ;
+}
+
+
+@keyframes secondtext{
+    from{
+        transform: translatex(-2rem);
+        opacity: 0;
+    }
+
+    to{
+        transform: translatex(0);
+        opacity: 1;
+    }   
+}
+
+
+.btn{
+    display: inline-block;
+    padding: 1.5rem 4rem;
+    color: var(--primary);
+    border-radius: 100px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    transition: all 0.3s;
+    animation: button 1s ;
+}
+
+@keyframes button{
+    from{
+        transform: translatey(4rem);
+        opacity: 0;
+    }
+
+    to{
+        transform: translatey(0);
+        opacity: 1;
+    }   
+}
+
+.btn:hover{
+    background-color: var(--purple);
+}
+
+.btn-pink{
+    background-color: var(--pink);
+}
+
+/* //////////////////////////////////////////main//////////////////////// */
+
+section{
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* -----------------------------------------about--------------------- */
+.about{
+    margin-top: 8rem ;
+    margin-bottom: 8rem;
+}
+
+.about-primary,.about-second{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8rem 1rem;
+}
+
+.aboutimg{
+    height: 25rem;
+    flex-basis: 25%;
+}
+
+.about-text{
+    flex-basis: 50%;
+}
+
+.about-primary-text{
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 3rem;
+    animation: primarytext 1s ;
+}
+
+.about-second-text{
+    word-spacing: 2px;
+    font-size: 1.6rem;
+    font-weight: 100;
+    animation: secondtext 1s ;
+}
+
+.divider{
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+
+/* ------------------------work-process--------------------- */
+
+.work{
+    width: 74%;
+    margin: 0 auto;
+}
+.workprocess{
+    background-image: url(images/work-process-bg.png);
+    background-size: cover;
+    height: 600px;
+}
+
+.workprocess_text{
+    text-align: center;
+    color: var(--primary);
+    width: 70%;
+    padding: 5rem;
+    margin: 0 auto;
+
+}
+
+.work-primary{
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.work-second{
+    font-weight: 100;
+    font-size: 1.6rem;
+    margin-bottom: 4rem;
+}
+
+.workprocess-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.workprocess-box .box{
+    text-align: center;
+    margin:1rem ;
+}
+
+
+.box{
+    border-radius: 25px;
+    height: 200px;
+    width: 150px;
+    background-color: var(--primary);
+    box-shadow: 10px 10px 2px rgba(255, 255, 255, 0.418);
+    transition: transform .2s;
+}
+
+.box:hover{
+    transform: translatey(-1rem);
+}
+
+.box-img{
+    height: 2.5rem;
+    margin-bottom:1rem ;
+    
+}
+
+.inside{
+    text-align: center;
+    padding: 5rem 1rem;
+}
+
+.box-primary{
+    font-size: 1.6rem;
+    margin-bottom:1rem ;
+}
+
+.box-second{
+    font-size: 1.4rem;
+    font-weight: 200;
+}
+
+/* ------------------------------------------------------review-------------------------- */
+
+.black{
+    color: var(--second);
+}
+
+.review-section{
+    display: flex;
+     justify-content: space-around;
+     margin: 5rem 0;
+} 
+
+.review-box{
+    margin-left: 4rem;
+    background-color: white;
+    padding: 3rem;
+    text-align: center;
+    box-shadow: 0 0 2rem rgba(0,0,0,0.1);
+}
+
+.review-box .reviewsecond{
+    font-weight: 100;
+    font-size: 1.8rem;
+    margin: 1.5rem 0;
+}
+
+.review-box .reviewthird{
+    font-size: 1.6rem;
+}
+
+.pink{
+    color: pink;
+}
+
+
+/* ---------------------------------price-section----------------------- */
+
+.price{
+    background-color: var(--lite-gray);
+    width: 100%;
+    padding: 5rem 0;
+}
+
+.pricelist{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.card{
+    perspective: 1500px;
+    position: relative;
+    height: 400px;
+    width: 300px;
+    
+}
+
+.cardside{
+    height: 400px;
+    width: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition:all 0.8s ;
+    backface-visibility: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cardsidefront{
+    
+    background-color: var(--primary);
+}
+
+.cardsideback{
+    background-color: var(--pink);
+    transform: rotatey(180deg);
+}
+
+.card:hover .cardsidefront {
+    transform: rotatey(-180deg);
+}
+
+.card:hover .cardsideback {
+    transform: rotatey(0);
+}
+
+.cardsidefront ul{
+    text-align: center;
+    margin: 5rem;
+}
+
+.cardsidefront ul li{
+    font-size: 1.3rem;
+    padding: 1.2rem 0;
+}
+
+.cardsidefront ul a{
+    display: inline-block;
+    font-size: 1.4rem;
+    padding: 2rem 6rem;
+    background-color: var(--purple);
+    color: var(--primary);
+    border-radius: 30px;
+}
+
+.cardsideback a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 2rem 6rem;
+    background-color: var(--purple);
+    color: var(--primary);
+    font-size: 1.8rem;
+    border-radius: 100px;
+
+}
+
+.cardsidefront .pink{
+    background-color: var(--pink);
+}
+
+footer{
+    height: 15vh;
+    width: 100%;
+    text-align: center;
+    background-color: var(--purple);
+    display: grid;
+    place-items: center;
+}
+
+
+.footer-text h3{
+    font-size: 2rem;
+    color: var(--pink);
+    margin: 1.5rem 0;
+    text-transform: uppercase;
+}
+
+hr{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.copy{
+    font-size: 1.6rem;
+    margin: 1.5rem 0;
+    color: var(--primary);
+}
+
+
+@media(max-width:770px){
+    html{
+        scroll-behavior: smooth;
+        text-transform: capitalize;
+        font-size: 8px;
+        box-sizing: inherit;
+        /* font-family: 'Poppins', sans-serif; */
+    }
+
+    .pricelist{
+        display: flex;
+        flex-direction:column ;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+        margin: 1.5rem;
+    }
+
+    .card{
+        perspective: 1500px;
+        position: relative;
+        height: 400px;
+        width: 300px;
+        margin-bottom: 1.5rem;
+        
+    }
+
+    .heading_text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: var(--primary);
+        text-align: center;
+    }
+
+    .navigationbar{
+        position: fixed;
+        background-color:whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem;
+        height: 7rem;
+        width: 70%;
+        margin: 5rem auto;
+        border-radius: 100px;
+        z-index: 2000;
+    }
+
+    .nav_ul{
+        display: flex;
+        display: none;
+    }
+
+    .nav_logo{
+        cursor: pointer;
+    }
+
+    .workprocess{
+        background-image: url(images/work-process-bg.png);
+        background-size: cover;
+        height: 800px;
+    }
+
+    .workprocess-box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media(max-width:400px){
+    html{
+        scroll-behavior: smooth;
+        text-transform: capitalize;
+        font-size: 8px;
+        box-sizing: inherit;
+        /* font-family: 'Poppins', sans-serif; */
+    }
+
+    section{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .about-primary,.about-second{
+        display: flex;
+        flex-direction:column ;
+        justify-content: space-around;
+        align-items: center;
+        padding: 8rem 1rem;
+        margin: 1rem;
+    }
+
+    .aboutimg{
+        height: 25rem;
+        flex-basis: 25%;
+        margin: 1.5rem 0;
+    }
+    
+    .about-text{
+        flex-basis: 50%;
+        margin: 3rem 0;
+    }
+
+    .workprocess{
+        background-image: url(images/work-process-bg.png);
+        background-size: cover;
+        height: 1600px;
+    }
+
+
+    .review-section{
+        display: flex;
+        flex-direction: column;
+         justify-content: space-around;
+         margin: 5rem 0;
+    }
+
+    .review-box{
+        margin: 4rem;
+        background-color: white;
+        padding: 1.5rem;
+        text-align: center;
+        box-shadow: 0 0 2rem rgba(0,0,0,0.1);
+    }
+}

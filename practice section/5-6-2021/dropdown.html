@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+
+        .center{
+            height: 100vh;
+            width: 100%;
+            display: grid;
+            place-content: center;
+        }
+
+        .menu{
+            position: relative;
+            font-size: 30px;
+             background-color: #333;
+            color: #ccc;
+            list-style: none;
+            text-transform: uppercase;
+            padding: 15px 356px;
+            z-index: 3;
+        }
+
+        .dropdown{
+            visibility:hidden ;
+            opacity:0 ;
+            z-index: -1;
+            position: absolute;
+            top: 100%;
+            transform: translateY(-2rem);
+            list-style: none;
+            font-size: 25px;
+            background-color: #333;
+            color: #ccc;
+            transition: all 0.4s ease 0s,visibility 0s linear , z-index 0s linear ;
+            padding: 10px 60px;
+        }
+
+        .dropdown li{
+            padding:20px 3px;
+        }
+
+        .menu:hover .dropdown{
+            visibility:visible ;
+            opacity:1 ;
+            z-index: 1;
+            transform: translateY(0);
+        }
+
+    </style>
+
+<body>
+    <div class="center">
+        <li class="menu">movies
+            <ul class="dropdown">
+                <li>horror</li>
+                <li>comedy</li>
+                <li>action</li>
+                <li>drama</li>
+                <li>suspence</li>
+            </ul>
+        </li>
+    </div>
+</body>
+</html>

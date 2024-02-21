@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .grid {
+        display: grid;
+        /* grid-template-columns: 200px 200px 300px; */
+        /* grid-template-columns: repeat(3,auto); */
+        grid-template-columns: 1fr 2fr 3fr;
+        grid-gap: 1rem;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 1rem;
+    }
+
+    .item {
+        padding: 30px;
+        border: #000 1px solid;
+        background-color: darkgray;
+        text-align: center;
+        font-weight: 500;
+        font-size: 20px;
+
+
+    }
+
+    div{
+        border: 1px solid red;
+    }
+
+    img{
+        height: 300px;
+        width: 180px;
+    }
+
+    section{
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+        grid-gap: 3rem;
+    }
+</style>
+
+
+<body>
+    <!-- <div class="grid">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6</div>
+    </div>
+
+
+    <main>
+        <section>
+            <h3>heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem esse fugiat laudantium autem eos
+                saepe aspernatur recusandae iure est modi, vel tempore quam, adipisci alias illum blanditiis consectetur
+                vero quos.</p>
+        </section>
+
+        <div>
+            <h3>heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem esse fugiat laudantium autem eos
+                saepe aspernatur recusandae iure est modi, vel tempore quam, adipisci alias illum blanditiis consectetur
+                vero quos.</p>
+        </div>
+    </main> -->
+
+    <!-- <section>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, optio eligendi praesentium, ut dicta
+                beatae molestias nisi pariatur officiis id placeat veniam deserunt quas ratione nobis illum? Maiores
+                similique recusandae debitis error laudantium rerum ducimus, impedit, perspiciatis hic vero ad
+                asperiores voluptas itaque iste neque unde repellendus delectus beatae tenetur!</p>
+        </div>
+
+
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, optio eligendi praesentium, ut dicta
+                beatae molestias nisi pariatur officiis id placeat veniam deserunt quas ratione nobis illum? Maiores
+                similique recusandae debitis error laudantium rerum ducimus, impedit, perspiciatis hic vero ad
+                asperiores voluptas itaque iste neque unde repellendus delectus beatae tenetur!</p>
+        </div>
+    </section> -->
+
+
+    <section>
+        <!-- <div class="item1">img 1</div>
+        <div class="item2">img 2</div>
+        <div class="item3">img 3</div> -->
+        <img src="chefs-01.jpg" >
+        <img src="chefs-02.jpg" >
+        <img src="chefs-03.jpg" >
+    </section>
+
+
+</body>
+
+</html>

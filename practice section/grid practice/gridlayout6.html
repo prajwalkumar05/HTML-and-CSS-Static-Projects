@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        .con{
+            display: grid;
+            grid-template-rows: 5vh 80vh repeat(2,70vh) 20vh; 
+            grid-template-columns: [side-start] 60px [side-end full-start] minmax(60px,1fr) [center-start] repeat(7, [col-star] minmax(min-content,150px) [col-end]) [center-end] minmax(60px,1fr) [full-end];
+
+        }
+
+        .box1{
+            background-color: aquamarine;
+            grid-row: 1/-1;
+            grid-column: side-start/side-end;
+
+        }
+
+        .box2{
+            background-color: red;
+            grid-column: full-start/full-end;
+        }
+
+        .box3{
+            background-color: orange;
+            grid-column: full-start/full-end;
+            text-transform: uppercase;
+            text-align: center;
+            display: grid;
+            
+            
+        }
+
+        .text{
+            align-self: center;
+        }
+
+        .box3 h1{
+            margin-bottom: 10px;
+        }
+
+        .box4{
+            background-color: lawngreen;
+            grid-column: center-start/center-end;
+        }
+
+        .box5{
+            background-color: gray;
+            grid-column: center-start/center-end;
+        }
+
+        .box6{
+            background-color: green;
+            grid-column: full-start/full-end;
+        }
+
+        
+    </style>
+
+<body>
+    <div class="con">
+        <div class="box1">nav</div>
+        <div class="box2">search</div>
+        <div class="box3">
+            <div class="text">
+                <h1>welcome to my website</h1>
+                <p>lets play the game</p>
+            </div>
+        </div>
+        <div class="box4">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil nobis perspiciatis ad! Optio inventore nesciunt quos illo quis, quidem dolore voluptatum. Consequatur, officia in. Ut quasi voluptatem culpa facilis voluptates, sapiente praesentium inventore similique obcaecati in nulla architecto, deserunt consequatur hic nemo doloribus quas iure asperiores debitis rerum. Quod repellendus placeat dolor? Obcaecati debitis possimus optio, unde totam tempore voluptates enim dolorem officia voluptatibus veritatis id sequi repellat recusandae magnam reiciendis facilis voluptatem sed animi eius. Nobis, est adipisci voluptas amet doloribus totam sapiente ut quia repellat dolor reprehenderit corrupti vero ad inventore magnam maiores officia eveniet at officiis! Atque.</p>
+
+        </div>
+        <div class="box5">main</div>
+        <div class="box6">footer</div>
+    </div>
+</body>
+</html>

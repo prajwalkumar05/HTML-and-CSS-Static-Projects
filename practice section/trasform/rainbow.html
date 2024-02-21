@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        .center{
+            height: 100vh;
+            width: 100%;
+            display: grid;
+            place-content: center;
+        }
+
+        .rain{
+            position: relative;
+        }
+
+        .rain .one{
+            position: absolute;
+            height: 400px;
+            width: 400px;
+            background-color: yellow;
+            border-radius: 50%;
+
+        }
+
+        .rain .two{
+            position: absolute;
+            height: 400px;
+            width: 400px;
+            background-color: red;
+            border-radius: 50%;
+            top: 20px;
+            left: -20px;
+            
+
+        }
+
+        .rain .three{
+            position: absolute;
+            height: 400px;
+            width: 400px;
+            background-color: orange;
+            border-radius: 50%;
+            top: 30px;
+            left: -30px;
+            
+
+        }
+    </style>
+
+<body>
+    <div class="center">
+        <div class="rain">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+            <div class="four"></div>
+            <div class="five"></div>
+            <div class="six"></div>
+        </div>
+    </div>
+</body>
+</html>

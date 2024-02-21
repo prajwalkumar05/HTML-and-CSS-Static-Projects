@@ -1,0 +1,67 @@
+@media(max-width:400px){
+    .showmenu,.hidemenu{
+        display: block;
+    }
+
+    .hidemenu{
+        color: white;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    .bgcontent{
+        background-image: url(slide-img1.jpg);
+        height: 90vh; width:100%;
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size: cover;
+        position: relative;
+        opacity: 0.3;
+}
+
+    /* .menu{
+        position: fixed;
+        height: 50vh;
+        width: 100%;
+        top: -100%;
+        left: 0;
+        background-color: #333;
+        z-index: 12;
+
+    } */
+
+    .menu{
+        position: fixed;
+        height: 50vh;
+        width: 100%;
+        top: 0;
+        left: 100%;
+        background-color: black;
+        text-align: center;
+        padding: 2rem 0;
+        transition: 1s;
+        z-index: 13;
+        padding: 1rem 0;
+    }
+
+    .menu a{
+        display: block;
+        color: #ffffff;
+        padding: 0.5rem 0;
+        
+    }
+
+    #click:checked ~ .menu{
+        left: 0;
+    }
+
+    .bg  .content{
+        color: var(--primary);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        z-index: 1;
+}

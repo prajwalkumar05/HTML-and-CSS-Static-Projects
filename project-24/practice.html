@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        .container{
+            width: 100%;
+            background-color: grey;
+        }
+
+        .header{
+            display: grid;
+            grid-template-rows: 15vh 1vh 94vh;
+        }
+
+        nav{
+            display: grid;
+            grid-template-columns: 30% 70%;
+        }
+
+        ul{
+            display: flex;
+            align-self: center;
+            justify-self: center;
+        }
+
+        ul li{
+            padding-right: 15px;
+            list-style: none;
+            text-transform: capitalize;
+            font-size: 20px;
+        }
+
+        .plus{
+            padding-right: 15px;
+            text-decoration: none;
+            text-transform: capitalize;
+            font-size: 20px;
+        }
+
+        .logo{
+            align-self: center;
+            justify-self: center;
+        }
+
+        .header-center{
+            /* text-align: center; */
+        }
+
+        .heading-text{
+            text-align: center;
+        }
+
+        .searchnow{
+            padding-right: 15px;
+            text-decoration: none;
+            text-transform: capitalize;
+            font-size: 20px;
+            background-color: lawngreen;
+        }
+
+        .select-bar{
+            display: grid;
+            grid-auto-flow: column;
+            width: 80%;
+            grid-template-rows: 50px;
+            /* grid-template-columns: 80%; */
+            margin: 0 auto;
+            /* justify-content: stretch;
+            align-content: stretch; */
+        }
+
+        .areas,.price,.location,.searchnow{
+            /* width: 300px; */
+            
+        }
+
+        .text{
+
+        }
+
+        .searchnow{
+            display: grid;
+            align-items: center;
+            justify-items: center;
+
+        }
+
+        .search-icon{
+            display: grid;
+            grid-auto-flow: column;
+            width: 70%;
+            margin: 0 auto;
+            margin-top: 60px;
+            justify-content: space-around;
+        }
+
+        .icons img{
+            padding: 25px;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+        .icons h3{
+            text-align: center;
+        }
+
+        .line{
+            border-bottom: 1px solid #fff;
+        }
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        @media(max-width:730px){
+            nav{
+                display: grid;
+                grid-template-columns: 100%;
+            }
+
+            ul{
+                display: none;
+                justify-self: center;
+            }
+
+            .logo{
+                align-self: center;
+                justify-self: center;
+            }
+
+            .header-center{
+                /* justify-self: center; */
+            }
+
+            .select-bar{
+            display: grid;
+            grid-auto-flow: row;
+            /* width: 80%; */
+            grid-template-rows: repeat(4,40px);
+        
+            /* grid-template-columns: 80%; */
+            /* margin: 0 auto; */
+            /* justify-content: stretch;
+            align-content: stretch; */
+        }
+
+        .  .icons img{
+            padding: 25px;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+        .icons img{
+            padding: 15px;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+        .icons h3{
+           display: none;
+        }
+
+
+        }
+
+
+    </style>
+
+
+<body>
+    <div class="container">
+        <header class="header">
+            <nav>
+                <div class="logo">
+                    <img src="images/white-logo.png" alt="logo">
+                </div>
+
+                <ul>
+                    <li>home</li>
+                    <li>category</li>
+                    <li>listing</li>
+                    <li>contact us</li>
+                    <a href="" class="plus"><i class="fas fa-plus-circle"></i>add your list</a>
+                </ul>
+            </nav>
+            <div class="line"></div>
+            
+
+            <div class="header-center">
+                <div class="heading-text">
+                    <h3 class="heading-secondary">OVER 36,500+ ACTIVE LISTINGS</h3>
+                    <h1 class="heading-primary">Find Nearby Places & Things</h1>
+                </div>
+
+                <div class="select-bar">
+                    <select name="areas" id="" class="areas">
+                        <option value="">all areas</option>
+                        <option value="">new village</option>
+                        <option value="">old town</option>
+                        <option value="">modren city</option>
+                    </select>
+
+                    <input type="text" placeholder="enter a location" class="location">
+
+                    <select name="areas" id="" class="price">
+                        <option value="">price range</option>
+                        <option value="">100$-250$</option>
+                        <option value="">250$-500$</option>
+                        <option value="">500$-750$</option>
+                        <option value="">750$-1000$</option>
+                        <option value="">1000$-more</option>
+                    </select>
+
+                    <a href="" class="searchnow"><i class="fas fa-search"></i>search now</a>
+                </div>
+
+                <div class="search-icon">
+                    <div class="icons">
+                        <img src="images/search-icon-01.png" alt="">
+                        <h3>apartments</h3>
+                    </div>
+
+                    <div class="icons">
+                        <img src="images/search-icon-02.png" alt="">
+                        <h3>food & cars</h3>
+                    </div>
+
+                    <div class="icons">
+                        <img src="images/search-icon-05.png" alt="">
+                        <h3>cars</h3>
+                    </div>
+
+                    <div class="icons">
+                        <img src="images/search-icon-04.png" alt="">
+                        <h3>shopping</h3>
+                    </div>
+
+                    <div class="icons">
+                        <img src="images/search-icon-05.png" alt="">
+                        <h3>traveling</h3>
+                    </div>
+                </div>
+            </div>
+        </header>
+</body>
+</html>

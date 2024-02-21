@@ -1,0 +1,149 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary:#ffffff;
+    --secondary:#333333;
+    --third:#304352;
+    --fourth:#e44c65;
+    --fifth:#f9f9f9;
+    --sixth:#888888;
+}
+
+html{
+    scroll-behavior: smooth;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin-bottom: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--sixth);
+}
+
+ul li{
+    list-style: none;
+}
+
+/* ----------------------------------navbar------------------------------- */
+
+nav{
+    /* position: fixed;
+    top: 0; */
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .logo{
+    color: var(--third);
+    letter-spacing: 2px;
+}
+
+nav .logo:hover{
+    opacity: 0.8;
+}
+
+nav ul a{
+    font-size: 0.7rem;
+    margin: 0 0.8rem;
+    font-family: 'Assistant', sans-serif;
+    color: var(--sixth);
+    text-transform: uppercase;
+}
+
+.bg{
+    background-color: var(--secondary);
+    /* position: relative; */
+    
+}
+
+.bgcontent{
+        background-image: url(slide-img1.jpg);
+        height: 90vh; width:100%;
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size: cover;
+        position: relative;
+        opacity: 0.3;
+}
+
+.bg  .content{
+    color: var(--primary);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    z-index: 12;
+    
+}
+
+.bg  .content h3{
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 0.4rem;
+}
+
+.bg  .content h6{
+    font-size: 0.6rem;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1.5rem;
+    word-spacing: 0.1rem;
+}
+
+.bg  .content a{
+    color: var(--primary);
+    font-size: 0.7rem;
+    padding: 0.6rem 1.6rem;
+    background-color: var(--fourth);
+    font-weight: 300;
+    transition: 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.bg  .content a:hover{
+    background-color: var(--secondary);
+}
+
+#click{
+    visibility: hidden;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.showmenu,.hidemenu{
+    display: none;
+}
+
+/* --------------about---------- */
+
+.about{
+    background-color:var(--fifth);
+    width: 100%;
+
+
+
+}
+
+.box{
+    width: 40%;
+}
+
+.box p{
+    font-size: 0.8rem;
+}

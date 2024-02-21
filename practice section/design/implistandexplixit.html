@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        .con{
+            display: grid;
+            height: 600px;
+            margin: 50px;
+            border: 1px solid green;
+            grid-template-rows: repeat(2,200px);
+            grid-template-columns: repeat(2,150px);
+            grid-gap: 20px;
+            color: #fff;
+            grid-auto-rows: 100px;
+            grid-auto-columns: 150px;
+            grid-auto-flow: column;
+            align-items: center;
+            justify-items: center;
+            /* justify-content:space-between;
+            align-content: space-evenly; */
+
+        }
+
+        .con > div{
+            background-color: brown;
+            border: 1px solid green;
+            padding: 20px;
+        }
+
+        .box3{
+            align-self: end;
+            justify-self: end;
+        }
+
+        .box4{
+            align-self: start;
+            justify-self: start;
+        }
+
+        .box2{
+            align-self: center;
+            justify-self: center;
+        }
+    </style>
+
+<body>
+    <div class="con">
+        <div class="box1">prajwal</div>
+        <div class="box2">kumar</div>
+        <div class="box3">javacript</div>
+        <div class="box4">css</div>
+        <div class="box5">html</div>
+        <div class="box6">java</div>
+        <div class="box7">nodejs</div>
+        <div class="box8">backend</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .mainpage {
+        height: 100vh;
+        width: 100%;
+        background-color: blueviolet;
+        z-index: -2;
+    }
+
+    nav {
+        height: 50px;
+        width: 100%;
+        /* background-color: azure; */
+        display: flex;
+        align-items: center;
+    }
+
+    nav .logo {
+        height: 50px;
+        width: 100%;
+        display: block;
+        text-transform: uppercase;
+        background-color: white;
+        line-height: 2;
+    }
+
+    .text {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: yellow;
+        /* z-index: 56; */
+    }
+
+    .text h1 {
+        font-size: 50px;
+        letter-spacing: 3px;
+        margin-bottom: 10px;
+    }
+
+    .text h3 {
+        font-size: 30px;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+    }
+
+    .text a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 10px 40px;
+        background-color: yellow;
+
+    }
+
+    .check{
+        display: none;
+    }
+
+    .popup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 100;
+        transition:all 0.5s;
+    }
+
+    .poptext {
+        width: 75%;
+        background-color: white;
+        text-align: center;
+        padding: 30px;
+        transform: scale(.25);
+        transition:all 1s .2s;
+    }
+
+    #popup:target{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    #popup:target .poptext{
+        transform: scale(1);
+    }
+
+    
+
+    .poptext h3{
+        text-transform: uppercase;
+        font-size: 50px;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+    }
+
+    .poptext p{
+        font-size: 20px;
+        column-count: 2;
+        
+    }
+
+    .poptext a{
+        position: absolute;
+        top: 3%;
+        right: 3%;
+        font-size: 50px;
+        text-decoration: none;
+        font-weight: 900;
+    }
+
+    .navigation_bar{
+        /* height: 100vh;
+        width: 100%; */
+    }
+
+    .background{
+        position: fixed;
+        top: 12px;
+        right: 30px;
+        height: 30px;
+        width: 30px;
+        background-color: blue;
+        border-radius: 50%;
+        z-index: 60;
+        transition: transform 0.5s;
+    }
+
+    .check_boxs{
+        position: fixed;
+        top: 10px;
+        right: 30px;
+        height: 40px;
+        width: 40px;
+        background-color: red;
+        z-index: 1;
+        border-radius: 50%;
+        z-index: 88;
+    }
+
+    #check_box:checked ~ .background{
+        transform: scale(80);
+    }
+
+    .navigation{
+      position: fixed;
+      height: 100vh;
+      width: 0;
+      top: 0;
+      right:-100%; 
+      z-index: 70; 
+      opacity: 0; 
+      transition: all 0.5s;
+    }
+
+    #check_box:checked ~ .navigation{ 
+        right: 0;
+        opacity: 1;
+        width: 100%;
+    }
+
+    .navul{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .navli{
+        list-style: none;
+        padding: 15px;
+    }
+
+    .nava{
+        font-size: 30px;
+        color: red;
+        text-decoration: none;
+    }
+
+    main{
+        height: 1000px;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="mainpage">
+            <div class="popup" id="popup">
+                <div class="poptext">
+                    <a href="">&times</a>
+                    <h3>welcome to site</h3>
+                    <p>Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quia
+                        sapiente vero necessitatibus? Tempore, itaque eaque error repellat aperiam expedita, tenetur ab
+                        dolor suscipit cum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos velit animi dolorum quis repudiandae modi odit nobis reiciendis iste placeat sit hic quo incidunt, quasi, perspiciatis, molestiae iure rerum tempora id deserunt sequi impedit. Numquam repellendus esse ex provident eius? aut iure optio, numquam magnam eveniet alias sunt ad vero. Aliquam similique
+                        saepe aspernatur, dolorem ducimus dolor aliquid exercitationem recusandae minima eos quas eum
+                        iste! amet consectetur adipisicing elit. Facilis aut blanditiis exercitationem eius et veritatis
+                        minima suscipit architecto odit? Quisquam!</p>
+                </div>
+            </div>
+            <nav>
+                <div class="logo">
+                    <h1>logos</h1>
+                </div>
+
+                <div class="navigation_bar">
+                    <input type="checkbox" class="check" id="check_box">
+                    <label for="check_box" class="check_boxs">menu</label>
+                    <div class="background"></div>
+        
+                    <nav class="navigation">
+                        <ul class="navul">
+                            <li class="navli"><a href="" class="nava">home</a></li>
+                            <li class="navli"><a href="" class="nava">services</a></li>
+                            <li class="navli"><a href="" class="nava">contact</a></li>
+                            <li class="navli"><a href="" class="nava">message</a></li>
+                            <li class="navli"><a href="" class="nava">book mark</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </nav>
+
+
+
+            <div class="text" id="text">
+                <h1>learn new things</h1>
+                <h3>welcome to my website</h3>
+                <a href="#popup">learn more</a>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+    </main>
+</body>
+
+</html>

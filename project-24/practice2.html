@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        .Categories{
+            width: 100%;
+            color: #fff;
+        }
+        .Categories-text{
+            text-align: center;
+        }
+
+        .Categories-table{
+            width: 85%;
+            margin: 0 auto;
+            background-color: #333;
+            display: grid;
+            grid-template-columns: minmax(min-content,1fr) minmax(min-content,1.5fr) 1fr;
+            
+        }
+
+        .boxing{
+            display: grid;
+            grid-template-rows: repeat(5,100px);
+            grid-row-gap: 1px;
+            align-content: stretch;
+            justify-content: stretch;
+
+        }
+
+        .Categories-tableimg img{
+            width: 350px;
+            height: 400px;
+        }
+
+        .Categories-middletext{
+            padding: 30px;
+            align-self: center;
+            justify-self: center;
+        }
+
+        .Categories-middletext h3{
+            font-size: 25px;
+            text-transform: capitalize;
+            font-weight: 600;
+        }
+
+        .Categories-middletext p{
+            font-size: 16px;
+            text-transform: capitalize;
+            font-weight: 100;
+        }
+
+        .Categories-tableimg{
+            align-self: center;
+            justify-self:center;
+            margin: 30px;
+        }
+
+        .Categories-icon{
+            display: grid;
+            grid-auto-flow: column;
+            background-color: grey;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+    @media(max-width:975px){
+            .Categories-tableimg img{
+            width: 300px;
+            height: 300px;
+        }
+    }
+
+    @media(max-width:870px){
+        .Categories-table{
+            width: 75%;
+            margin: 0 auto;
+            background-color: #333;
+            display: grid;
+            grid-template-columns: 1fr;
+            
+        }
+
+        .Categories-tableimg img{
+            width: 100%;
+            height: auto;
+        }
+
+        .Categories-name{
+            display: none;
+        }
+
+        .Categories-img{
+            color: #fff !important;
+        }
+    }
+
+
+
+    </style>
+
+
+<body>
+    <section class="Categories">
+        <div class="Categories-text">
+            <h1 class="heading-primary">Popular Categories</h1>
+            <h3 class="heading-secondary">CHECK THEM OUT</h3>
+        </div>
+
+      
+        <div class="Categories-table">
+            <div class="boxing">
+                <div class="Categories-icon">
+                    <img src="images/search-icon-01.png" alt="" class="Categories-img">
+                    <label for="" class="Categories-name">apartments</label>
+                </div>
+
+                <div class="Categories-icon">
+                    <img src="images/search-icon-02.png" alt="" class="Categories-img">
+                    <label for="" class="Categories-name">food & cars</label>
+                </div>
+
+                <div class="Categories-icon">
+                    <img src="images/search-icon-03.png" alt="" class="Categories-img">
+                    <label for="" class="Categories-name">cars</label>
+                </div>
+
+                <div class="Categories-icon">
+                    <img src="images/search-icon-04.png" alt="" class="Categories-img">
+                    <label for="" class="Categories-name">shopping</label>
+                </div>
+
+                <div class="Categories-icon">
+                    <img src="images/search-icon-05.png" alt="" class="Categories-img">
+                    <label for="" class="Categories-name">traveling</label>
+                </div>
+            </div>      
+
+            <div class="Categories-middletext">
+                <h3>One Of The Most Trending Stuffs Right Now!</h3>
+                <p>Plot Listing is a responsive Bootstrap 5 website template that included 4 different HTML pages.
+                    This template is provided by TemplateMo website. You can apply this layout for your static or
+                    dynamic CMS websites.</p>
+                <a href="" class="Categories-table-btn">Discover more</a>
+            </div>
+
+            <div class="Categories-tableimg">
+                <img src="images/tabs-image-01.jpg" alt="">
+            </div>
+        </div>
+    </section>
+</body>
+</html>

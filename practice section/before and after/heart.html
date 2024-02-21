@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        .center{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .heart{
+            position: relative;
+            display: block;
+            height: 0;
+            width: 0;
+            border-left: 135px solid transparent;
+            border-right: 135px solid transparent;
+            border-bottom: 160px solid black ;
+            transform: rotate(180deg);
+            
+        }
+
+         .heart::before{
+             content: '';
+            position: absolute;
+            height: 180px;
+            width: 180px;
+            background-color: black;
+            border-radius: 50%;
+            top:130px;
+            left: -23px;
+            
+        } 
+
+        .heart::after{
+             content: '';
+            position: absolute;
+            height: 180px;
+            width: 180px;
+            background-color: black;
+            border-radius: 50%;
+            top:130px;
+            left: -158px;
+            
+        } 
+    </style>
+
+<body>
+    <div class="center">
+        <div class="heart">
+        </div>
+    </div>
+</body>
+</html>

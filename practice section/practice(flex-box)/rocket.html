@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+
+        .center{
+            /* padding: 60px; */
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+           justify-content: center;
+        }
+
+        .layout{
+            display: flex;
+            height: 10vh;
+            margin: 10px;
+            align-items: center;
+        }
+
+        .layout div{
+            border: 5px solid black;
+            padding:30px;
+            margin: 20px;
+            background-color: greenyellow; 
+        }
+
+        .one1{
+          
+           flex-grow: 1;
+        }
+
+        .one2{
+           flex-basis: 80%;
+        }
+
+        .one3{
+           flex-grow: 1;
+        }
+
+
+        .one4{
+           flex-grow: 8;
+        }
+
+        .one5{
+           flex-grow: 1;
+        }
+
+
+        .one6{
+           flex-grow: 2;
+        }
+
+
+        .one7{
+           flex-grow: 1;
+        }
+
+        .one8{
+           flex-grow: 2;
+        }
+
+        .one9{
+           flex-grow: 8;
+        }
+
+        .one13{
+           flex-grow: 10;
+        }
+
+        .one14{
+           flex-grow: 1;
+        }
+
+        .one15{
+           flex-grow: 10;
+        }
+
+        .one16{
+           flex-grow: 1;
+        }
+
+        .one17{
+           flex-grow: 10;
+        }
+    </style>
+
+
+<body>
+    <div class="center">
+        <div class="layout o1">
+            <div class="one1"></div>
+            <div class="one2"></div>
+            <div class="one3"></div>
+        </div>
+
+        <div class="layout o2">
+            <div class="one4"></div>
+            <div class="one5"></div>
+            <div class="one6"></div>
+        </div>
+
+        <div class="layout o3">
+            <div class="one7"></div>
+            <div class="one8"></div>
+            <div class="one9"></div>
+        </div>
+
+        <div class="layout o5">
+            <div class="one13"></div>
+            <div class="one14"></div>
+            <div class="one15"></div>
+            <div class="one16"></div>
+            <div class="one17"></div>
+        </div>
+    </div>
+</body>
+</html>

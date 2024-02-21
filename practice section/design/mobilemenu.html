@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+
+        header{
+            height: 100vh;
+            width: 100%;
+            background-color: chartreuse;
+        }
+
+        .check{
+            display: none;
+        }
+
+        .check_boxs{
+            height: 5rem;
+            width: 5rem;
+            background-color: white;
+            border-radius: 50%;
+            position: fixed;
+            top: 3.5rem;
+            right: 3.5rem;
+            z-index: 3000;
+        }
+
+        .background{
+            height: 4rem;
+            width: 4rem;
+            background-color:limegreen;
+            border-radius: 50%;
+            position: fixed;
+            top: 4rem;
+            right: 4rem;
+            z-index: 2000;
+            transition: transform 0.2s;
+            /* transform: scale(80); */
+        }
+
+        .navigation{
+            height: 100vh;
+            width: 100%;
+            position: fixed;
+            top: -100%;
+            right: -100%;
+            z-index: 2500;
+            opacity: 0;
+            transition: all 0.2s;
+        }
+
+        .navul{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-transform: uppercase;
+            text-align: center;
+            
+        }
+
+        .navli{
+            list-style: none;
+            padding: 20px;
+            font-size: 25px;
+
+        }
+
+        .nava{
+            text-decoration: none;
+        }
+
+        .nava:hover{
+            color: orangered;
+        }
+
+        .check:checked ~ .background{
+            transform: scale(80);
+        }
+
+        .check:checked ~ .navigation{
+            opacity: 1;
+            width: 100%;
+            top: 0;
+            right: 0;
+        }
+
+        
+    </style>
+
+
+<body>
+    <header>
+        <div class="navigation_bar">
+            <input type="checkbox" class="check" id="check_box">
+            <label for="check_box" class="check_boxs">menu</label>
+            <div class="background"></div>
+
+            <nav class="navigation">
+                <ul class="navul">
+                    <li class="navli"><a href="" class="nava">home</a></li>
+                    <li class="navli"><a href="" class="nava">services</a></li>
+                    <li class="navli"><a href="" class="nava">contact</a></li>
+                    <li class="navli"><a href="" class="nava">message</a></li>
+                    <li class="navli"><a href="" class="nava">book mark</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</body>
+</html>

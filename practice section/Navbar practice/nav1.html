@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            /* border: 2px solid red; */
+        }
+
+        body{
+            height: 1800px;
+        }
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 60px;
+            background-color: rgb(180, 231, 140);
+            padding: 30px;
+            position: fixed;
+        }
+
+        ul li{
+            list-style: none;
+            display: inline;
+
+        }
+
+        ul li a{
+            text-decoration: none;
+            margin: 0px 20px;
+        }
+
+        button{
+            padding: 6px 30px;
+            color: white;
+            background-color: rgba(0,136,169,1);
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+        }
+
+        button:hover{
+            background-color: rgba(0,136,169,0.6);
+
+        }
+
+
+    </style>
+
+    <header>
+        <div class="bar" id="nav-1">
+            <h2>prajwal</h2>
+        </div>
+        <div class="bar" id="nav-2">
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">SERVICE</a></li>
+                <li><a href="">HELP</a></li>
+                <li><a href="">CONTACT</a></li>
+
+            </ul>
+        </div>
+        <div class="bar" id="nav-3">
+            <button>login</button>
+        </div>
+    </header>
+</body>
+</html>

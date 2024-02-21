@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        body{
+
+        }
+
+        .text{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text h3{
+            font-size: 35px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            letter-spacing: 2px;
+            text-shadow: 4px 2px rgba(0,0,0,0.3);
+           position: relative;
+        }
+
+        .text::after{
+            content: '';
+            border-top: 10px solid #000;
+            position: absolute;
+            width: 30vh;
+            top: 47%;
+        }
+
+        .text::before{
+            content: '';
+            border-bottom: 10px solid #000;
+            position: absolute;
+            width: 30vh;
+            bottom: 45%;
+        }
+    </style>
+
+<body>
+    <div class="text">
+        <h3>prajwal kumar</h3>
+    </div>
+</body>
+</html>

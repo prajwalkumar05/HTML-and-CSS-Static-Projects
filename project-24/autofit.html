@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>auto-fit</title>
+</head>
+
+    <style>
+        *{
+            border: 1px solid red;
+        }
+
+        footer{
+            display: grid;
+            background-color: black;
+            color: #fff;
+            grid-template-columns:repeat(auto-fit, minmax(8rem,min-content));
+            padding: 80px 0;
+            text-align: center;
+            justify-content: center;
+            grid-gap: 20px;
+        }
+
+        p{
+            font-size: 25px;
+        }
+    </style>
+
+
+<body>
+    <footer>
+        <p>prajwal</p>
+        <p>kumar</p>
+        <p>hello world</p>
+        <p>welcome to my world</p>
+        <p>grid tutorial</p>
+    </footer>
+</body>
+</html>

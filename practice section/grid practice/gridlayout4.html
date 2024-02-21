@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        .con{
+            display: grid;
+            grid-gap: 15px;
+            grid-template-rows: 90vh repeat(4,80vh) 20vh;
+            grid-template-columns: [full-start space-start] minmax(60px,1fr) [center-start] repeat(6, [col-start] minmax(min-content,1fr) [col-end] ) [center-end] minmax(60px,1fr) [full-end];
+        }
+
+        .con > div{
+            background-color:lightgreen;
+        }
+
+        .box1{
+            grid-column: full-start/full-end;
+        }
+
+        .box4{
+            grid-column: full-start/full-end;
+        }
+
+        .box6{
+            grid-column: full-start/full-end;
+        }
+
+        .box2{
+            grid-column: center-start/center-end;
+        }
+
+        .box3{
+            grid-column: center-start/center-end;
+        }
+
+        .box5{
+            grid-column: center-start/center-end;
+        }
+    </style>
+
+<body>
+    <div class="con">
+        <div class="box1">header</div>
+        <div class="box2">main</div>
+        <div class="box3">main</div>
+        <div class="box4">gallary</div>
+        <div class="box5">main</div>
+        <div class="box6">footer</div>
+    </div>
+</body>
+</html>

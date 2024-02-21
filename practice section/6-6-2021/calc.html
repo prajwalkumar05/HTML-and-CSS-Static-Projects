@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+
+        :root{
+            --width:100vw;
+            --font-size:30px;
+        }
+
+        .box h1{
+            font-size: calc(var(--font-size) + 36px);
+        }
+
+        .box2 h1{
+            font-size: 56px;
+        }
+
+        .first{
+            font-size: 26px;
+            font-weight: 100;
+        }
+
+        .hello{
+            font-size: 26px;
+        }
+
+        @media(max-width: 480px){
+            :root{
+            --width:100vw;
+            --font-size:5px;
+        }
+
+        .box h1{
+            font-size: calc(var(--font-size) + 36px);
+        }
+        }
+
+
+    </style>
+
+<body>
+    <div class="box">
+    <h1>prajwal kumar</h1>
+    </div>
+
+    <div class="box2">
+        <h1>prajwal kumar</h1>
+    </div>
+    
+
+    <h1 class="first">prajwal kumar</h1>
+
+    <p class="hello">prajwal kumar</p>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        .center{
+            height: 100vh;
+            width: 100%;
+            display: grid;
+            background-color: #333;
+            place-content: center;
+        }
+
+        .box{
+            height: 60vh;
+            width: 50px;
+            background-color: white;
+            border-radius:400px 400px 0 0;
+            position: relative;
+        }
+
+        .box::after{
+            content: '101 101 101 100 000  ';
+            position: absolute;
+            height: 100px;
+            width: 25px;
+            top: 80%;
+            left: 80%;
+            transform: translate(-50%,-50%) rotatey(40deg);
+            background-color: chartreuse;
+        }
+
+        .bottom{
+            position: absolute;
+            height: 100px;
+            width: 150px;
+            background-color: white;
+            top: 99%;
+            left: -100%;
+            border-radius: 200px 200px 0 0;
+        }
+
+        .fan{
+            height: 160px;
+            width: 30px;
+            background-color:white;
+            border-radius: 200px 200px 0 0;
+            position: absolute;
+            top: -28%;
+            left: 23%;
+            transform-origin: bottom;
+            z-index: 1;
+            animation: fan 6s linear infinite;
+        }
+
+        @keyframes fan{
+            to{
+                transform: rotate(360deg);
+            }
+        }
+
+        .fan::after{
+            content: '';
+            height: 180px;
+            width: 30px;
+            background-color:white;
+            border-radius: 200px 200px 0 0;
+            position: absolute;
+            top: 70%;
+            left: 200%;
+            transform: rotate(120deg);
+        }
+
+        .fan::before{
+            content: '';
+            height: 180px;
+            width: 30px;
+            background-color:white;
+            border-radius: 200px 200px 0 0;
+            position: absolute;
+            top: 70%;
+            left: -200%;
+            transform: rotate(-120deg);
+        }
+    </style>
+
+<body>
+    <div class="center">
+        <div class="box">
+            <div class="bottom"></div>
+            <div class="fan"></div>
+        </div>
+        
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        .center{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .tv{
+            position: relative;
+            height: 250px;
+            width: 400px;
+            background-image: url(one.jpg);
+            background-size: cover;
+            border: 20px solid gray;
+            border-radius: 10px;
+        }
+
+        .tv::after{
+            content: '';
+            position: absolute;
+            height: 60px;
+            width: 30px;
+            background-color: gray;
+            left: 50%;
+            bottom: -70px;
+            transform: translateX(-50%);
+        }
+
+        .tv::before{
+            content: '';
+            position: absolute;
+            height: 20px;
+            width: 150px;
+            background-color: gray;
+            left: 50%;
+            bottom: -80px;
+            transform: translateX(-50%);
+            border-radius: 5px;
+        }
+
+    </style>
+
+<body>
+    <div class="center">
+        <div class="tv"></div>
+    </div>
+</body>
+</html>

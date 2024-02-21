@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+
+        .center{
+            height: 600px;
+            background-color: #ccc;
+            display: flex;
+            /* justify-content: center;
+            justify-content: space-evenly; */
+            flex-wrap: wrap;
+            align-items:center;
+            align-content: center;
+            
+        }
+
+        .box{
+            background-color: coral;
+            padding: 30px;
+            margin: 5px;
+            flex: 1;
+            /* align-items: center; */
+            
+            
+        }
+
+        .i1{
+            order: 2;
+            flex: 6;
+        }
+
+        .i2{
+            overflow: 0;
+            /* flex-grow: 4;
+            flex-shrink: 0; */
+            /* flex-basis: 600px;
+            flex-shrink: 1; */
+        }
+
+        .i3{
+            order: 4;
+            /* height: 200px; */
+            /* align-self: flex-end; */
+        }
+
+        .i4{
+            /* height: 200px; */
+            order: -1;
+        }
+
+        .i5{
+            order: -2;
+        }
+
+    </style>
+
+<body>
+    <div class="center">
+        <div class="box i1">1</div>
+        <div class="box i2">2</div>
+        <div class="box i3">3</div>
+        <div class="box i4">4</div>
+        <div class="box i5">5</div>
+        <div class="box i1">1</div>
+        <div class="box i2">2</div>
+        <div class="box i3">3</div>
+        <div class="box i4">4</div>
+        <div class="box i5">5</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        .center{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box{
+            height: 200px;
+            width: 200px;
+            background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+            transition: 2s ease-in-out;
+        }
+        .box1{
+            height: 200px;
+            width: 200px;
+            background: rgb(2,0,36);
+            transition: 1s ease-in-out;
+            margin-left: 100px;
+            transform: rotate(20deg);
+        }
+
+        .box:hover{
+            transform: skewx(-20deg);
+        }
+
+
+    </style>
+
+<body>
+    <div class="center">
+        <div class="box"></div>
+        <div class="box1"></div>
+    </div>
+   
+
+</body>
+</html>

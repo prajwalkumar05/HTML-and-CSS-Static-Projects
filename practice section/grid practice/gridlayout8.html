@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        .con{
+            display: grid;
+            grid-template-rows:200px repeat(3,100px) 200px;
+            grid-template-columns: [side-start] 200px [side-end full-start] 500px [full-end];
+            grid-gap: 10px;
+        }
+
+
+        .con > div{
+            background-color:orange;
+        }
+
+        .box1{
+            grid-column: side-start/full-end;
+        }
+
+        .box3{
+            grid-row: 3/span 2;
+            grid-column: side-start/side-end;
+        }
+
+        .box4{
+            grid-row: 2/span 2;
+            grid-column: full-start/full-end;
+        }
+    </style>
+
+    
+
+<body>
+    <div class="con">
+        <div class="box1">header</div>
+        <div class="box2">ads</div>
+        <div class="box3">nav</div>
+        <div class="box4">article</div>
+        <div class="box5">foot</div>
+    </div>
+</body>
+</html>

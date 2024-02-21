@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+
+        header  h1{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        body{
+            height: 3000px;
+        }
+
+        .checkbox{
+
+        }
+
+        .lab{
+            background-color: orangered;
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            /* z-index: 200; */
+        }
+
+        .lab2{
+            background-color: orange;
+            position:fixed;
+            top: 40px;
+            right: 40px;
+            /* z-index: 200; */
+        }
+
+        /* .background{
+            background-color: orangered;
+            position: fixed;
+            top: 40px;
+            right: 40px;
+            height: 50px;
+            width: 50px;
+            z-index: 100;
+            transition: transform 0.5s;
+        } */
+
+        nav{
+            background-color: orangered;
+            height: 100vh;
+            width: 100%;
+            position: absolute;
+            top: -100%;
+            right: 0%;
+            z-index: 150;
+            opacity: 0;
+            transition: all 0.5s;
+        }
+
+        ul{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            
+        }
+
+        li{
+           list-style: none;
+           font-size: 30px;
+           text-transform: uppercase;
+           text-align: center;
+           padding: 15px 0;
+        }
+
+        /* #check:checked ~ .background{
+            transform: scale(80);
+        } */
+
+        #check:checked ~ nav{
+            opacity: 1;
+            top: 0;
+        }
+
+        
+    </style>
+
+<body>
+    <header>
+        <h1>hello gyus of all</h1>
+    <div class="navigation">
+        <input type="checkbox"  id="check">
+        <label for="check" class="lab">menu</label>
+        <div class="background"></div>
+
+        <nav>
+            <label for="check" class="lab2">close</label>
+            <ul>
+                <li>home</li>
+                <li>project</li>
+                <li>help</li>
+                <li>contact</li>
+                <li>greetings</li>
+
+            </ul>
+        </nav>
+    </div>
+</header>
+</body>
+</html>

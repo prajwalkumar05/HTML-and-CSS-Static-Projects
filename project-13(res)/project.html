@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c4f885f66c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="project..css">
+    <title>Document</title>
+</head>
+
+<body>
+    <img src="banner-bg-01.jpg" class="bg">
+    <nav>
+        <div class="logo">
+            <h3> <i class="far fa-building"></i>Indian <span>cons</span></h3>
+        </div>
+        <div class="navbar" id="navlinks">
+            <i class="fas fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="">home</a></li>
+                <li><a href="">about</a></li>
+                <li><a href="">contact</a></li>
+                <li><a href="">price</a></li>
+                <li><a href="">help</a></li>
+            </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+        <!-- <div class="social">
+            <i class="fas fa-cog"></i>
+            <i class="far fa-bell"></i>
+            <i class="far fa-user-circle"></i>
+        </div> -->
+    </nav>
+    <section class="heading">
+        <h1>Develop Strategies for
+            your business</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ad veniam cumque unde debitis ex, laboriosam
+            eum pariatur reprehenderit fuga. <br> dolor sit amet consectetur adipisicing elit</p>
+        <a href="">get started</a>
+    </section>
+
+
+
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showMenu(){
+            navlinks.style.right = "0";
+        }
+        function hideMenu(){
+            navlinks.style.right = "-200px";
+        }
+        
+    </script>
+
+</body>
+
+</html>

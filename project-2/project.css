@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.479);
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin: 25px;
+}
+
+nav ul li{
+    display: inline ;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    padding: 0px 12px;
+    font-weight: 200;
+
+}
+
+.title{
+    font-size: 30px;
+    /* font-weight: bolder; */
+    font-family: fantasy;
+    letter-spacing: 2px;
+}
+
+.btn{
+    background-color: orangered;
+    padding: 10px 18px;
+    border: none;
+    color: whitesmoke;
+    font-weight: 700;
+}
+main{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+  
+}
+
+.first{
+    margin-bottom:20px ;
+    font-size: 20px;
+    margin-left: 220px;
+}
+
+.sec{
+    /* font-family: fantasy; */
+    font-size: 80px;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    
+    font-family: fantasy;
+   
+}
+.thi{
+    margin-left: 260px;
+    margin-top: 20px;
+    padding:10px 20px;
+    background-color: orangered;
+    color: white;
+    font-weight: 600;
+    border: none;
+}
+
+.spanfir{
+    color: orangered;
+}
+
+.spansec{
+    color: orangered;
+}
+
+footer{
+    position: absolute;
+    top: 66%;
+    left: 38%;
+    font-size: 30px;
+
+}
+footer>i{
+    margin: 10px;
+    border:1px solid white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+i:hover{
+    background-color: orangered;
+}
+
+

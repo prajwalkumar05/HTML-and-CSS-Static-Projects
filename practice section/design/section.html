@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+        <style>
+            .center{
+                height: 100vh;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+            }
+
+            .photo{
+                position: relative;
+            }
+
+            .photo div img{
+                position: absolute;
+                top: 0;
+                left: 0;
+                transform: translate(-50%,-50%);
+                height: 300px;
+                width: 300px;
+            }
+
+            .img1{
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+
+            .img2{
+                position: absolute;
+                top:-150px;
+                left: 200px;
+                
+            }
+
+            .img3{
+                position: absolute;
+                top:-150px;
+                left: -100px; 
+            }
+
+        </style>
+
+<body>
+    <div class="center">
+        <div class="photo">
+            <div class="img1">
+                <img src="wat.jpg" >
+            </div>
+
+            <div class="img2">
+                <img src="water.jpg">
+            </div>
+
+            <div class="img3">
+                <img src="bg.jpg">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

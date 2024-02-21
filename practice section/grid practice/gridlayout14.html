@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        .con{
+            display: grid;
+            grid-gap: 1px;
+            grid-template-rows: 90vh repeat(5,70vh) 20vh;
+            grid-template-columns:[side-start] 70px [side-end grid-start] minmax(60px,1fr) [center-start] repeat(8, [col-start] minmax(min-content,100px) [col-end] ) [center-end] minmax(60px,1fr) [grid-end] ;
+        }
+
+        .con > div{
+            background-color: orange;
+        }
+
+        .box1{
+            grid-row: 1/-1;
+        }
+
+        .box2{
+            grid-column: grid-start/col-end 6;
+        }
+
+        .box3{
+            grid-column: col-start 7/-1;
+        }
+
+        .box4{
+            grid-column: center-start/center-end;
+        }
+
+        .box5{
+            grid-column: grid-start/grid-end;
+        }
+
+        .box6{
+            grid-column: center-start/center-end;
+        }
+
+        .box7{
+            grid-column: center-start/center-end;
+        }
+
+        .box8{
+            grid-column: grid-start/grid-end;
+        }
+
+        .box9{
+            grid-column: grid-start/grid-end;
+        }
+    </style>
+
+<body>
+    <div class="con">
+        <div class="box1">nav</div>
+        <div class="box2">header1</div>
+        <div class="box3">header2</div>
+        <div class="box4">main</div>
+        <div class="box5">full</div>
+        <div class="box6">main</div>
+        <div class="box7">main</div>
+        <div class="box8">full</div>
+        <div class="box9">footer</div>
+    </div>
+</body>
+</html>

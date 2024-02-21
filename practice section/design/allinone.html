@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .center {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        perspective: 1500px;
+        height: 550px;
+        width: 350px;
+        z-index: ;
+    }
+
+    .cardside {
+        height: 550px;
+        width: 350px;
+        transition: all 1s;
+        position: absolute;
+        top: 0;
+        left: 0;
+        backface-visibility: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .cardside--front {
+        background-color: #fff;
+    }
+
+    .cardside img {
+        height: 200px;
+        width: 100%;
+        background-blend-mode: screen;
+        border-radius: 3px;
+    }
+
+    .text {
+        /* padding:0 0px; */
+    }
+
+    .cardside ul {
+        text-transform: capitalize;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding: 30px 0;
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .cardside li {
+
+        list-style: none;
+        font-size: 22px;
+        padding: 12px 0;
+    }
+
+    .cardside li:not(:last-child) {
+        border-bottom: 1px solid #eee;
+    }
+
+
+    .cardside--back {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: coral;
+        transform: rotatey(180deg);
+        text-align: center;
+    }
+
+    .card:hover .cardside--front {
+        transform: rotatey(-180deg);
+    }
+
+    .card:hover .cardside--back {
+        transform: rotatey(0);
+    }
+
+    .cardside--back h3 {
+        font-size: 20px;
+        text-transform: uppercase;
+        margin-top: 60px;
+    }
+
+    .cardside--back h1 {
+        font-size: 60px;
+        text-transform: uppercase;
+        font-weight: 100;
+        margin: 20px;
+    }
+
+    .cardside--back a {
+        margin-top: 160px;
+        display: inline-block;
+        font-size: 18px;
+        text-transform: uppercase;
+        padding: 12px 30px;
+        background-color: white;
+        text-decoration: none;
+        border-radius: 300px;
+
+    }
+
+    .popup {
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        background-color: #333;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 500;
+    }
+
+    .content {
+        position: relative;
+        height: 500px;
+        width: 70%;
+        background-color: white;
+        margin: 150px auto;
+        text-align: center;
+        text-transform: capitalize;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding: 40px;
+        transition: all 0.6s;
+        transform: scale(0.4);
+    }
+
+    .content h2{
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .content h4{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .content p{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .content a{
+        margin-top: 20px;
+        display: inline-block;
+        font-size: 18px;
+        text-transform: uppercase;
+        padding: 12px 30px;
+        background-color: orange;
+        text-decoration: none;
+        border-radius: 300px;
+        color: #fff;
+    }
+
+    .content .close{
+        position: absolute;
+        top: 20px;
+        right:40px;
+    }
+
+    #popup:target{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    #popup:target .content{
+        transform: scale(1);
+    }
+
+    .background{
+        height: 40px;
+        width: 40px;
+        background-color: coral;
+        border-radius: 50%;
+        position: fixed;
+        top: 35px;
+        right:35px;
+        z-index: 120;
+        transition: all 0.5s;
+    }
+
+    .bar{
+        height: 50px;
+        width: 50px;
+        background-color: greenyellow;
+        border-radius: 50%;
+        position: fixed;
+        top: 30px;
+        right:30px;
+        z-index: 200;
+    }
+
+    nav{
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top:-100%;
+        left: 0;
+        z-index: 150;
+        opacity: 0;
+        transition: all 0.4s;
+    }
+
+    .navul{
+        text-transform: uppercase;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+
+    .navli{
+        font-size: 25px;
+        list-style: none;
+        padding: 15px;
+
+    }
+
+    #check:checked ~ .background{
+        transform: scale(90);
+    }
+
+    #check:checked ~ nav{
+        opacity: 1;
+        top: 0;
+    }
+
+    #check{
+        display: none;
+    }
+
+    
+
+
+</style>
+
+<body>
+    <div class="navigationmenu">
+        <input type="checkbox"  id="check">
+        <label for="check" class="bar">&backcong;</label>
+
+        <div class="background"></div>
+
+        <nav>
+            <ul class="navul">
+                <li class="navli">home</li>
+                <li class="navli">service</li>
+                <li class="navli">contact</li>
+                <li class="navli">book-now</li>
+                <li class="navli">aboutus</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="center">
+        
+        <div class="popup" id="popup">
+            <div class="content">
+                <h2>book your tour</h2>
+                <h4>guidelence</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores voluptate dolorem iste incidunt
+                    ratione cum laudantium consectetur ullam magnam totam temporibus aperiam, porro voluptatem harum,
+                    blanditiis natus molestiae deserunt mollitia, dolorum ipsam beatae saepe. Laudantium at quam quo?
+                    Optio doloribus quia obcaecati aperiam, minima officiis at vitae enim quis autem fuga voluptate, a
+                    dolor. Ipsa, autem ipsam error repellendus odio fugiat impedit velit rem aperiam accusamus ex natus
+                    provident, cum earum omnis temporibus sed odit consequatur aliquid at dolore assumenda.</p>
+                <a href="">book you tour now</a>
+                <a href="" class="close">&times;</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="cardside cardside--front">
+                <img src="bg.jpg">
+                <div class="text">
+                    <ul>
+                        <li>three day</li>
+                        <li>free bus</li>
+                        <li>fire camp</li>
+                        <li>no photos</li>
+                        <li>level:easy</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="cardside cardside--back">
+                <h3>price</h3>
+                <h1>2000</h1>
+                <a href="#popup">book now</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

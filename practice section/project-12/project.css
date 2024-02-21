@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --gree:#a4c639;
+}
+
+img{
+    height: 100vh;
+    max-width: 100%;
+    background-image: url(slide_02.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titlebar{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    background-color: #a4c639;
+    line-height: 40px;
+}
+
+.contact{
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.contact span{
+    padding: 0px 12px;
+    border-right: 1px solid #fff;
+    cursor: pointer;
+}
+
+.social i{
+    padding: 0px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border-right: 1px solid #fff;
+}
+
+nav{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    
+}
+
+nav .logo{
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 0px 28px;
+    line-height: 40px;
+    color: rgba(255, 255, 255, 0.719);
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+    
+}
+
+nav ul li a:hover{
+    color: #fff;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #a4c639;
+    
+}
+
+.heading{
+    position: relative;
+    top: 15%;
+    left: 13%;
+    text-transform: uppercase;
+    width: 40%;
+}
+
+.heading h3,p,a{
+    padding: 25px 0px;
+}
+
+.heading h3{
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    color: var(--gree) ;
+}
+
+.heading h2{
+    font-size: 55px;
+    font-weight: bolder;
+    font-family: sans-serif;
+
+}
+
+.heading p{
+    text-transform: capitalize;
+    line-height: 28px;
+    margin-bottom: 16px;
+}
+
+.heading a{
+    padding: 10px 28px;
+    background: var(--gree);
+    text-decoration: none;
+    color: #fff;
+    font-weight: 800;
+    border-radius: 25px;
+    
+}
+
+.heading a:hover{
+    background-color: #fff;
+    color: var(--gree);
+}
+
+
+

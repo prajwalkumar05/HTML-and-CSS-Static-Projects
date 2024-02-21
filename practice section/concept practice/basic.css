@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: aquamarine;
+}
+.first{
+    background-color: burlywood;
+    height: 50px;
+}
+
+.first li{
+    align-items: center;
+    display: inline-block;
+    list-style: none;
+}
+
+.first li a{
+    text-decoration: none;
+    /* display: inline-block; */
+    margin: 5px;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.sec{
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    font-size: 50px;
+}
+
+.th{
+    float: right;
+    text-decoration: none;
+    list-style: none;
+    font-size: 25px;
+    padding-right: 10px;
+}
+
+/* .th{
+    float: right;
+} */

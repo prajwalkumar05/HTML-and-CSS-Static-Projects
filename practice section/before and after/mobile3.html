@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        .center{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+        .mobile{
+            position: relative;
+            height: 200px;
+            width: 120px;
+            background-color: #000;
+            border: 30px solid gray;
+            border-radius: 25px;
+        }
+
+        .mobile::after{
+            content: '';
+            position: absolute;
+            height: 5px;
+            width: 50px;
+            background-color: black;
+            top: -15px;
+            left: 60px;
+            border-radius: 3px;
+            transform: translateX(-50%);
+        }
+
+        .mobile::before{
+            content: '';
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            background-color: black;
+            bottom: -25px;
+            left: 50px;
+            border-radius: 50px;
+            
+        }
+    </style>
+
+<body>
+    <div class="center">
+        <div class="mobile">
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        .center{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        .box{
+            position: relative;
+            height: 200px;
+            width: 200px;
+            transform: rotate(45deg);
+        }
+
+        .one{
+            position: absolute;
+            height: 0;
+            width: 0;
+            border-top:100px solid transparent ;
+            border-right:100px solid lime ;
+            border-left:100px solid transparent  ;
+            border-bottom:100px solid lime ;
+        }
+
+        .two{
+            position: absolute;
+            top: 0;
+            left: 100%;
+            height: 0;
+            width: 0;
+            border-top:100px solid lime ;
+            border-right:100px solid lime ;
+            border-left:100px solid lime  ;
+            border-bottom:100px solid lime ;
+        }
+
+        .three{
+            position: absolute;
+            top: 100%;
+            left: 100%;
+            height: 0;
+            width: 0;
+            border-top:100px solid lime ;
+            border-right:100px solid lime ;
+            border-left:100px solid lime  ;
+            border-bottom:100px solid lime ;
+        }
+
+        .four{
+            position: absolute;
+            top: 100%;
+            left: 0;
+            height: 0;
+            width: 0;
+            border-top:100px solid lime ;
+            border-right:100px solid lime ;
+            border-left:100px solid lime  ;
+            border-bottom:100px solid lime ;
+        }
+    </style>
+
+
+<body>
+    <div class="center">
+        <div class="box">
+            <sapn class="one"></sapn>
+            <sapn class="two"></sapn>
+            <sapn class="three"></sapn>
+            <sapn class="four"></sapn>
+            
+        </div>
+    </div>
+</body>
+</html>

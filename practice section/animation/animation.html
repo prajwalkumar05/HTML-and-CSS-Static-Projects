@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        ul{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #333;
+        }
+
+        ul li{
+            font-size: 100px;
+            list-style: none;
+            font-family: monospace;
+            padding-left: 20px;
+            font-weight: 900;
+            color: #ccc;
+            animation: prajwal 1s infinite;
+        }
+
+        @keyframes prajwal{
+            0%{
+                color: #ccc;
+            }
+
+            90%{
+                color: #ccc;
+            }
+
+            100%{
+                color: red;
+            }
+        }
+
+        ul li:nth-child(1){
+            animation-delay:0.2s;
+        }
+
+        ul li:nth-child(2){
+            animation-delay:0.3s;
+        }
+        ul li:nth-child(3){
+            animation-delay:0.4s;
+        }
+
+        ul li:nth-child(4){
+            animation-delay:0.5s;
+        }
+        ul li:nth-child(5){
+            animation-delay:0.6s;
+        }
+        ul li:nth-child(6){
+            animation-delay:0.7s;
+        }
+        ul li:nth-child(7){
+            animation-delay:0.8s;
+        }
+
+        
+    </style>
+
+<body>
+    <ul>
+        <li>p</li>
+        <li>r</li>
+        <li>a</li>
+        <li>j</li>
+        <li>w</li>
+        <li>a</li>
+        <li>l</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid line</title>
+</head>
+
+   <style>
+       .con{
+           display: grid;
+           grid-template-rows: [header-start] 100px [header-end main-start] 300px [main-end footer-start] 100px [footer-end];
+           /* grid-template-columns: [c1-start] 150px [c1-end c2-start] 150px [c2-end c3-start] 150px [c3-end]; */
+           grid-template-columns: 1fr repeat(3,[col-start] 200px [col-end]) [grid-end] 1fr;
+           grid-gap: 15px;
+       }
+
+       .con > div{
+        background-color:chartreuse;
+       }
+
+       .box1{
+            grid-row: header-start/header-end;
+           grid-column: col-start 1/col-end 2;
+       }
+
+       .box5{
+            grid-row: footer-start/footer-end;
+           grid-column: col-start 1/col-end 2;
+       }
+
+       .box2{
+           grid-column: col-start 1/col-end 2;
+       }
+
+       .box3{
+           grid-row: header-start/footer-end;
+           grid-column: col-start 3/col-end 3;
+       }
+   </style>
+
+<body>
+    <div class="con">
+        <div class="box1">header</div>
+        <div class="box2">ads</div>
+        <div class="box3">nav</div>
+        <!-- <div class="box4">main</div> -->
+        <div class="box5">footer</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        .center{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box{
+            position: relative;
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            transform: rotate(45deg);
+            animation: heart 1.5s infinite linear;
+        }
+
+        @keyframes heart{
+
+            50%{
+                transform:rotate(45deg) scale(1.5);
+            }
+
+            60%{
+                transform:rotate(45deg) scale(1.3);
+            }
+
+            80%{
+                transform:rotate(45deg) scale(1.5);
+            }
+            100%{
+                transform:rotate(45deg) scale(1);
+            }
+
+
+        }
+
+        .box::after{
+            content: '';
+            position: absolute;
+            top: -50%;
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            border-radius: 50%;
+        }
+        .box::before{
+            content: '';
+            position: absolute;
+            top: 0%;
+            left: -50%;
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            border-radius: 50%;
+        }
+    </style>
+
+<body>
+    <div class="center">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

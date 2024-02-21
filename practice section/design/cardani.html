@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        .center{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card{
+            height: 200px;
+            position: relative;
+            width: 250px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            padding: 40px;
+            overflow: hidden;
+        }
+
+        .card::after{
+            content: '';
+            position: absolute;
+            bottom: -98%;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: tomato;
+            transition: all 0.4s;
+            z-index: 1;
+        }
+
+        .card:hover::after{
+            bottom: 0;
+        }
+
+        .card .content{
+            position:relative;
+            text-transform: uppercase;
+            z-index: 2;
+            color: gray;
+        }
+
+        .card h3{
+            font-size: 25px;
+        }
+
+        .card p{
+            text-transform:capitalize;
+            font-size: 18px;
+        }
+
+        .card a{
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px 15px;
+            background-color: springgreen;
+            display: inline-block;
+            margin-top: 10px;
+            transition: all 0.5s;
+        }
+
+        .card:hover .content{
+            color: whitesmoke;
+        }
+
+
+    </style>
+
+<body>
+    <div class="center">
+        <div class="card">
+            <div class="content">
+                <h3>design</h3>
+                <p>Lorem ipsum dolor sit amet 
+                    consectetur adipisicing elit. Possimus, error.</p>
+                <a href="">read more</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

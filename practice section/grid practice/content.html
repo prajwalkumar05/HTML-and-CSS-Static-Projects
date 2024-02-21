@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid lines</title>
+</head>
+
+    <style>
+        .content{
+            display: grid;
+            width: 90%;
+            grid-template-rows:[first-start] 200px [first-end secondrow-start] 150px [secondrow-end];
+            grid-template-columns:[one-start] 100px [one-end second-start] 50px [second-end third-start] 150px [third-end fourth-start]  250px [fourth-end];
+            grid-gap: 10px;
+        }
+
+        .content > div{
+            background-color: aquamarine;
+        }
+
+        .box1{
+            grid-row: first-start/first-end;
+        }
+
+        .box2{
+            grid-column: second-start/fourth-end;
+        }
+
+        .box3{
+            grid-column: one-start/second-end;
+        }
+
+        .box4{
+            grid-column: third-start/fourth-end;
+        }
+    </style>
+
+<body>
+    <div class="content">
+        <div class="box1">hello mast</div>
+        <div class="box2">king</div>
+        <div class="box3">aram a hudga</div>
+        <div class="box4">indian cricket</div>
+        <div class="box5">welcome</div>
+        <div class="box6">where are you</div>
+        <div class="box7">when india</div>
+        <div class="box8">hello</div>
+    </div>
+</body>
+</html>

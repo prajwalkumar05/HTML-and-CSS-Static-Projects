@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        .center{
+            height: 100vh;
+            width: 100%;
+            display: grid;
+            place-content: center;
+        }
+
+        .menu{
+            position: relative;
+            font-size: 28px;
+            font-weight: 900;
+            list-style: none;
+            display: inline-block;
+            background-color: yellow;
+            padding: 0
+        }
+
+        .drop{
+            position: absolute;
+            visibility:hidden ;
+            z-index: -1;
+            opacity: 0;
+            font-size: 25px;
+            font-weight: 200;
+            list-style: none;
+            transform: translateY(-2rem);
+            background: yellow;
+            transition: all 0.5s ease 0s;
+        }
+
+        .drop li{
+            padding: 6px;
+        }
+
+        .menu:hover .drop{
+            visibility:visible ;
+            z-index: 1;
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+
+<body>
+    <div class="center">
+        <ul class="menu">
+            <li>content
+                <ul class="drop">
+                    <li>prajwal</li>
+                    <li>kumar</li>
+                    <li>website</li>
+                    <li>dropdowm</li>
+                    <li>prajwal</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

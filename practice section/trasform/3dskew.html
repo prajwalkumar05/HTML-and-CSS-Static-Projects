@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        .box{
+            height: 100vh;
+            width: 100%;
+            display: grid;
+            place-content: center;
+        }
+
+        .one{
+            position: relative;
+            height: 200px;
+            width: 300px;
+            background-color: black;
+            transform: rotatex(40deg) skewx(45deg); 
+        }
+
+        .one::after{
+            content: '';
+            position: absolute;
+            height: 200px;
+            width: 80px;
+            left: -80px;
+            top: 37px;
+            background-color: blueviolet;
+            transform: skewY(-45deg);
+        }
+
+        .one::before{
+            content: '';
+            position: absolute;
+            height: 80px;
+            width: 300px;
+            bottom: -78px;
+            left: -43px;
+            background-color: blueviolet;
+            transform: skewx(-45deg);
+
+        }
+    </style>
+
+<body>
+    <div class="box">
+        <div class="one"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,156 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 100vh;
+    min-width: 100%;
+    background-image: url(images/hero/hero-bg.svg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+nav{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 30px 0;
+}
+
+nav .logo span{
+    font-size: 35px;
+    font-weight: 700;
+    color: #0FC4A5;
+}
+
+.menus .menu a{
+    padding: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    line-height: 2;
+    
+}
+
+.menus .menu a:hover{
+    text-decoration: underline;
+}
+
+.menus .menu a:last-child{
+    padding: 10px 20px;
+    color: blueviolet;
+    background-color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.menus .menu a:last-child:hover{
+    opacity: 0.8;
+}
+
+.logo .circle{
+    background-color: #0FC4A5;
+    padding: 15px;
+    border-radius: 50%;
+    margin-right: 6px;
+    color: white;
+
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 40% 30%;
+     place-items:center;
+     grid-gap: 100px;
+     justify-content: center;
+
+}
+
+.content .text h1{
+    color: white;
+    font-size: 50px;
+    padding-bottom: 15px;
+}
+
+.content .text h4{
+    color: #ccc;
+    font-size: 20px;
+    font-weight: 100;
+    padding-bottom: 45px;
+}
+
+.content .text a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding: 15px 30px;
+    background-color:#0FC4A5 ;
+    transition: 0.2s ease-in-out;
+}
+
+.content .text a:hover{
+    opacity: 0.8;
+}
+
+.content .image{
+    margin-top: 3rem;
+}
+
+
+@media(max-width:400px){
+    .content{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .content .image img{
+        margin-top: -7rem;
+        height: 300px;
+        width: 360px;
+    }
+
+    .content .text{
+        margin-top: 2rem;
+        width: 80%;
+    }
+
+    .content .text h1{
+        color: white;
+        font-size: 30px;
+        padding-bottom: 15px;
+    }
+    
+    .content .text h4{
+        color: #ccc;
+        font-size: 20px;
+        font-weight: 100;
+        padding-bottom: 25px;
+    }
+    
+    .content .text a{
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        padding: 15px 30px;
+        background-color:#0FC4A5 ;
+        transition: 0.2s ease-in-out;
+    }
+
+    .menus .menu a{
+        padding: 0 10px;
+        font-size: 20px;
+        text-decoration: none;
+        text-transform: capitalize;
+        color: white;
+        line-height: 2;
+        display: none;
+        
+    }
+}

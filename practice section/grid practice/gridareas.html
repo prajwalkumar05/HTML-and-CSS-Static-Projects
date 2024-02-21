@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+</head>
+
+    <style>
+        .con{
+            padding: 60px;
+            display: grid;
+            grid-gap: 15px;
+            grid-template-rows: 100px 400px 50px 100px;
+            grid-template-columns: 200px 400px ;
+            grid-template-areas: "head head "
+                                  "nav art "
+                                  "ads art "
+                                  "ads foot  ";
+        }
+
+        .con > div{
+            background-color: coral;
+        }
+
+        .box-1{
+            grid-area: head;
+        }
+
+        .box-2{
+            grid-area: nav;
+        }
+
+        .box-3{
+            grid-area: art;
+        }
+
+        .box-4{
+            grid-area: ads;
+        }
+
+        .box-5{
+            grid-area: foot;
+        }
+    </style>
+
+<body>
+    <div class="con">
+        <div class="box-1">header</div>
+        <div class="box-2">nav</div>
+        <div class="box-3">articles</div>
+        <div class="box-4">ads</div>
+        <div class="box-5">footer</div>
+    </div>
+</body>
+</html>

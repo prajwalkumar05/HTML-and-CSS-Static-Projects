@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        .menu{
+               position: relative;
+               background-color: palegoldenrod;
+               display: inline-block;
+               font-size: 30px;
+           }
+
+           .ani{
+               visibility: hidden;
+               opacity: 0;
+               position: absolute;
+               /* top: 100%; */
+               left: 0px;
+               background: orangered;
+               transform: translateY(-6rem);
+               z-index: -1;
+               transition: all 0.2s ease 0s;
+               /* visibility 0s linear 0.3s,
+                z-index 0s linear 0.1s; */
+           }
+
+
+           .ani li{
+               list-style: none;
+               transform: translateX(-20px);
+               padding: 10px;
+               font-size: 20px;
+           }
+
+           .menu:hover .ani{
+               visibility:visible;
+               opacity: 1;
+               z-index: 1;
+               transform: translateY(0);
+           }
+
+
+    </style>
+
+<body>
+    <ul >
+        <li class="menu">home
+            <ul class="ani">
+                <li>hello</li>
+                <li>hello</li>
+                <li>hello</li>
+                <li>hello</li>
+                <li>hello</li>
+                <li>hello</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        .center{
+            height: 100vh;
+            width: 100%;
+            display: grid;
+            place-content: center;
+           
+        }
+
+        .box{
+            height: 280px;
+            width: 600px;
+            background-color: cornflowerblue;
+            border-radius: 300px 300px 0 0;
+            border: 20px solid;
+            border-color:green red cornflowerblue yellow;
+            position: relative;
+        }
+
+        .box::after{
+            content: '';
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            height: 230px;
+            width: 12px;
+            background-color: black;
+            border-radius: 200px 200px 0 0;
+            transform-origin: bottom;
+            animation: meter 10s linear forwards;
+        }
+
+        @keyframes meter{
+            0%{
+                transform: rotate(-88deg);
+            }
+
+            10%{
+                transform: rotate(-58deg);
+            }
+
+            30%{
+                transform: rotate(-70deg);
+            }
+
+            50%{
+                transform: rotate(-20deg);
+            }
+
+            60%{
+                transform: rotate(0deg);
+            }
+
+            70%{
+                transform: rotate(40deg);
+            }
+
+            80%{
+                transform: rotate(20deg);
+            }
+
+            90%{
+                transform: rotate(40deg);
+            }
+
+            100%{
+                transform: rotate(-90deg);
+            }
+        }
+
+        .box::before{
+            content: '';
+            position: absolute;
+            top: 97%;
+            left: 48.5%;
+            transform: translate(-50%,-50%);
+            height: 30px;
+            width: 30px;
+            background-color: black;
+            border-radius:50%;
+            transform-origin: bottom;
+            transform: rotate(0deg);
+        }
+
+
+    </style>
+
+
+<body>
+    <div class="center">
+        <div class="box">
+        </div>
+    </div>
+</body>
+</html>

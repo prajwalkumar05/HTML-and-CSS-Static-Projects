@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas: 
+            'item1 item1 item1'
+            'item2 item3 item3'
+            'item4 item5 item6'
+            'item7 item7 item7';
+            grid-gap: 15px;
+        }
+
+        .item1,.item2,.item3,.item4,.item5,.item6,.item7{
+            border: 1px solid red;
+            text-align: center;
+        }
+
+        
+
+        .item1{
+            grid-area:item1 ;
+            text-align: center;
+        }
+
+        .item2{
+            grid-area:item2 ;
+            text-align: center;
+        }
+
+        .item3{
+            grid-area:item3 ;
+        }
+
+        .item4{
+            grid-area:item4 ;
+        }
+
+        .item5{
+            grid-area:item5 ;
+        }
+
+        .item6{
+            grid-area:item6 ;
+        }
+
+        .item7{
+            grid-area:item7 ;
+            text-align: center;
+        }
+
+
+        @media(max-width:600px){
+
+            .container{
+            display: grid;
+            grid-template-areas: 
+            'item1'
+            'item2'
+            'item3'
+            'item4'
+            'item5'
+            'item6'
+            'item7';
+        }
+        }
+
+    </style>
+
+
+<body>
+    <div class="container">
+        <div class="item1">
+            <h1>heading</h1>
+        </div>
+        <div class="item2">
+            <h2>welcome to mysite</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, possimus voluptas fugiat aliquid nihil at
+                laboriosam rerum accusantium commodi asperiores ipsum, nam sapiente, illo error numquam? Fugit quos
+                magnam necessitatibus.</p>
+        </div>
+        <div class="item3">
+            <h2>contact us</h2>
+            <ul>
+                <li>hello media</li>
+                <li>hello media</li>
+                <li>hello media</li>
+                <li>hello media</li>
+                <li>hello media</li>
+            </ul>
+        </div>
+        <div class="item4">
+            <h2>welcome to text1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, possimus voluptas fugiat aliquid nihil at
+                laboriosam rerum accusantium commodi asperiores ipsum, nam sapiente, illo error numquam? Fugit quos
+                magnam necessitatibus.</p>
+        </div>
+        <div class="item5">
+            <h2>welcome to text2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, possimus voluptas fugiat aliquid nihil at
+                laboriosam rerum accusantium commodi asperiores ipsum, nam sapiente, illo error numquam? Fugit quos
+                magnam necessitatibus.</p>
+        </div>
+        <div class="item6">
+            <h2>welcome to text3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, possimus voluptas fugiat aliquid nihil at
+                laboriosam rerum accusantium commodi asperiores ipsum, nam sapiente, illo error numquam? Fugit quos
+                magnam necessitatibus.</p>
+        </div>
+        <div class="item7">
+            <h3>bottom content</h3>
+        </div>
+</body>
+</html>

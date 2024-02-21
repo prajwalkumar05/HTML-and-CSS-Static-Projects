@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+
+        .center{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            justify-content: space-around;
+            /* align-items: center; */
+        }
+
+        .card{
+            margin: 50px;
+            /* padding: 100px 0; */
+            perspective: 1500px;
+            position: relative;
+            height: 600px;
+            width: 400px;
+        }
+
+        .cardside{
+            height:600px;
+            width: 400px;
+            transition: all 0.8s ease;
+            position: absolute;
+            backface-visibility: hidden;
+            /* backface-visibility:hidden; */
+        }
+
+        .cardside--front{
+            background-color: chartreuse;
+            color: coral;
+            text-align: center;
+        }
+
+        .cardside--front h2{
+            color: black;
+            text-transform: uppercase;
+            padding: 60px 0;
+            color:dodgerblue;
+            
+        }
+
+        .cardside--front ul{
+            /* padding: 100px 0px; */
+            color: black;
+            text-transform: uppercase;
+            list-style: none;
+            padding: 20px 0;
+            font-size: 22px;
+        }
+
+        .cardside--front li{
+            padding: 20px;
+            color: black;
+            text-transform: uppercase;
+            list-style: none;
+            color: black;
+            border-bottom: #eee;
+            
+        }
+
+        .cardside--back{
+            background-color:deeppink;
+            transform: rotatey(180deg);
+            text-align: center;
+            padding: 150px 0;
+        }
+
+        .card:hover .cardside--front{
+            transform: rotatey(-180deg);
+        }
+
+        .card:hover .cardside--back{
+            transform: rotatey(0);
+        }
+
+        .cardside--back p{
+            font-size: 20px;
+            text-transform: uppercase; 
+        }
+
+        .cardside--back h1{
+            font-size: 40px;
+            text-transform: uppercase; 
+            margin-bottom: 150px;
+        }
+
+        .cardside--back a{
+            font-size: 16px;
+            text-transform: uppercase; 
+            padding: 20px 40px;
+            background-color: white;
+            border-radius: 200px;
+            text-decoration: none;
+        }
+
+
+    </style>
+
+<body>
+    <div class="center">
+        <div class="card">
+                <div class="cardside cardside--front" >
+                    <h2>price table</h2>
+                    <ul>
+                        <li>10 storage</li>
+                        <li>free cobbelstone</li>
+                        <li>singe house</li>
+                        <li>only bike</li>
+                        <li>own current bill</li>
+                    </ul>
+                </div>
+
+                <div class="cardside cardside--back">
+                    <p>price</p>
+                    <h1>$300</h1>
+                    <a href="">book now</a>
+                </div>
+        </div>
+
+        <!-- <div class="card">
+                <div class="cardside cardside--front" >
+                    <h2>card</h2>
+                    <ul>
+                        <li>prajwal</li>
+                        <li>prajwal</li>
+                        <li>prajwal</li>
+                        <li>prajwal</li>
+                        <li>prajwal</li>
+                    </ul>
+                </div>
+
+                <div class="cardside cardside--back">
+                    <p>kumar</p>
+                </div>
+        </div>
+
+        <div class="card">
+                <div class="cardside cardside--front" >
+                    <h2>card</h2>
+                    <ul>
+                        <li>prajwal</li>
+                        <li>prajwal</li>
+                        <li>prajwal</li>
+                        <li>prajwal</li>
+                        <li>prajwal</li>
+                    </ul>
+                </div>
+
+                <div class="cardside cardside--back">
+                    <p>kumar</p>
+                </div>
+        </div> -->
+</div>
+
+
+
+
+</body>
+</html>

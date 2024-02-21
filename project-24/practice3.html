@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        .Listing{
+            display: grid;
+        }
+
+        .Categories-text{
+            text-align: center;
+        }
+
+        .box-list{
+            display: grid;
+            grid-row-gap: 50px;
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        .box1{
+            display: grid;
+            grid-template-columns:repeat(3,1fr);
+            background-color: #ccc;
+            
+        }
+
+        .list-text{
+            padding: 30px;
+            justify-self: center;
+            align-self: center;
+        }
+
+        .list-last{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 30px;
+            /* justify-self: center;
+            align-self:center; */
+        }
+
+        .list-img{
+            width: 100%;
+            height: 100%;
+        }
+
+
+
+
+
+
+
+
+        @media(max-width:900px){
+            .box1{
+                display: grid;
+                grid-auto-flow: column;
+                grid-template-columns: 100%;
+                grid-template-rows: 300px repeat(3,min-content);
+            
+            }
+
+            .list-last{
+            
+                padding: 30px;
+                justify-self: flex-start;
+                align-self:flex-start;
+            }
+
+            .list-text{
+            padding: 30px;
+            justify-self: flex-start;
+            align-self:flex-start;
+        }
+        }
+
+    </style>
+
+
+<body>
+    <section class="Listing">
+        <div class="Categories-text">
+            <h1 class="heading-primary">Recent Listing</h1>
+            <h3 class="heading-secondary">CHECK THEM OUT</h3>
+        </div>
+
+        <div class="box-list">
+            <div class="box1">
+                <img src="images/listing-01.jpg" alt="" class="list-img">
+                <div class="list-text">
+                    <h3>1.first apertment unit</h3>
+                    <p>by: Sale Agent</p>
+                    <p> $450 - $950 / month with taxes</p>
+                    <p>details:2760 sq ft</p>
+                    <span><img src="images/listing-icon-02.png" alt="">bedroom</span>
+                    <span><img src="images/listing-icon-03.png" alt="">bathroom</span>
+                </div>
+
+                <div class="list-last">
+                    <div class="star">
+                        <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                        class="far fa-star"></i><i class="far fa-star"></i><span>(24)reviews</span> <br>
+                    </div>
+                        <a href="" class="list-btn"><i class="far fa-eye"></i>contact now</a>
+                </div>
+            </div>
+
+
+            <div class="box1">
+                <img src="images/listing-02.jpg" alt="" class="list-img">
+                <div class="list-text">
+                    <h3>2.another house of gaming</h3>
+                    <p>by: Sale Agent</p>
+                    <p> $650 - $1150 / month with taxes</p>
+                    <p>details:3150 sq ft</p>
+                    <span><img src="images/listing-icon-02.png" alt="">bedroom</span>
+                    <span><img src="images/listing-icon-03.png" alt="">bathroom</span>
+                </div>
+
+                <div class="list-last">
+                    <div class="star">
+                        <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                        class="far fa-star"></i><i class="far fa-star"></i><span>(17)reviews</span> <br>
+                    </div>
+                        <a href="" class="list-btn"><i class="far fa-eye"></i>contact now</a>
+                </div>
+            </div>
+
+
+            <div class="box1">
+                <img src="images/listing-03.jpg" alt="" class="list-img">
+                <div class="list-text">
+                    <h3>3.secrate place hidden house</h3>
+                    <p>by: Sale Agent</p>
+                    <p> $1250 - $1950 / month with taxes</p>
+                    <p>details:2760 sq ft</p>
+                    <span><img src="images/listing-icon-02.png" alt="">6bedroom</span>
+                    <span><img src="images/listing-icon-03.png" alt="">3bathroom</span>
+                </div>
+
+                <div class="list-last">
+                    <div class="star">
+                        <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                        class="far fa-star"></i><i class="far fa-star"></i><span>(11)reviews</span> <br>
+                    </div>
+                        <a href="" class="list-btn"><i class="far fa-eye"></i>contact now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

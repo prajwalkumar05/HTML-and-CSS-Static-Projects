@@ -1,0 +1,156 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.hotte{
+    width: 120px;
+    height: 150px;
+    background-color: coral;
+    border: 1px transparent;
+    border-radius: 40px;
+    position: absolute;
+    left: 45%;
+    top:30% ;
+    z-index: -1;
+    
+    
+
+}
+.mande{
+    width:120px ;
+    height: 100px;
+    background-color: hotpink; 
+    border: 4px transparent;
+    border-radius:70px;
+    position: absolute;
+    left:45%;
+    top: 20%;
+    z-index: 4;
+    
+}
+.kaalu{
+    width: 20px;
+    height: 80px;
+    border: 1px transparent;
+    border-bottom-right-radius: 20px;
+    background-color: saddlebrown;
+    position: absolute;
+    left: 39rem;
+    top: 50%;
+    z-index: 2;
+
+
+}
+.right{
+    width: 20px;
+    height: 80px;
+    border: 1px transparent;
+    border-bottom-right-radius: 20px;
+    background-color: rgb(221, 114, 37);
+    position: absolute;
+    left: 44rem;
+    top: 50%;
+    z-index: 1;
+}
+.buttonone{
+    height: 5px;
+    width: 5px;
+    border: 1px solid red;
+    background-color: rgb(216, 40, 40);
+    position: absolute;
+    top: 15rem;
+    left: 41.5rem;
+    padding: 2px;
+    border-radius: 20px;
+    z-index: 6;
+    
+   
+   
+}
+.button2{
+    height: 5px;
+    width: 5px;
+    border: 1px solid red;
+    background-color: rgb(216, 40, 40);
+    position: absolute;
+    top: 17rem;
+    left: 41.5rem;
+    padding: 2px;
+    border-radius: 20px;
+    z-index: 7;
+}
+    
+.button3{
+    height: 5px;
+    width: 5px;
+    border: 1px solid red;
+    background-color: rgb(216, 40, 40);
+    position: absolute;
+    top: 19rem;
+    left: 41.5rem;
+    padding: 2px;
+    border-radius: 20px;
+    z-index: 7;
+}
+.button4{
+    height: 5px;
+    width: 5px;
+    border: 1px solid rgb(19, 18, 18);
+    background-color: rgb(216, 40, 40);
+    position: absolute;
+    top: 10.5rem;
+    left: 40.5rem;
+    padding: 2px;
+    border-radius: 49%;
+    z-index: 9;
+}
+.button5{
+    height: 5px;
+    width: 5px;
+    border: 1px solid rgb(19, 18, 18);
+    background-color: rgb(216, 40, 40);
+    position: absolute;
+    top: 10.5rem;
+    left: 43rem;
+    padding: 2px;
+    border-radius: 49%;
+    z-index: 9;
+}
+.triangle{
+    height: 0;
+    width: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid red;
+    position: absolute;
+    left: 625px;
+    top: 50px;
+
+}
+.ky1{
+    width: 70px;
+    height:20px;
+    border-radius: 10px;
+    background-color: rgb(221, 114, 37);
+    position: absolute;
+    left: 41%;
+    top: 40%;
+}
+ .ky2{
+    width: 70px;
+    height:20px;
+    border-radius: 10px;
+    background-color: rgb(221, 114, 37);
+    position: absolute;
+    left: 52.5%;
+    top: 40%;
+}
+.ky3{
+    height: 50px;
+    width: 50px;
+    border-radius: 70%;
+    background-color: seagreen;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+    border-bottom-right-radius: 50px;
+}

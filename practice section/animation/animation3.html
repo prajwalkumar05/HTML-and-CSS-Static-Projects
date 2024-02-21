@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wheel</title>
+</head>
+
+    <style>
+        .center{
+            height: 100vh;
+            width: 100%;
+            display: grid;
+            place-items: center;
+        }
+
+        .wheel{
+            height: 300px;
+            width: 300px;
+            border: 20px solid;
+            border-color: green red;
+            border-radius: 50%;
+            background-color: #ccc;
+            position: relative;
+            animation: prajwal 2s infinite linear;
+        }
+
+        .inner{
+            height: 200px;
+            width: 200px;
+            border: 20px solid;
+            border-color: red green;
+            border-radius: 50%;
+            background: yellow;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+        .wheel::after{
+            content: '';
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            background-color: black;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+       @keyframes prajwal{
+           from{
+            transform: rotate(0deg);
+           }
+           to{
+               transform: rotate(360deg);
+           }
+       }
+    </style>
+
+<body>
+    <div class="center">
+        <div class="wheel">
+            <div class="inner"></div>
+        </div>
+    </div>
+</body>
+</html>

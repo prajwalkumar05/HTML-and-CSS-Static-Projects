@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        .center{
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+           
+        }
+
+        .center::before{
+            content:'';
+            background-image:url(one.jpg);
+            background-size:cover ;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.3;
+            z-index: -1;
+        }
+    </style>
+
+<body>
+    <div class="center">
+        <h1>hello</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, tempore quidem laboriosam ex quas officia sit sint eaque libero deserunt.</p>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, perspiciatis.</p>
+    </div>
+</body>
+</html>

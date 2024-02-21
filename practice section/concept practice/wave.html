@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        .wave{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100%;
+            background-color: #000;
+        }
+
+        h1{
+            position: absolute;
+            font-size: 200px;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        h1:nth-child(1){
+            color: aqua;
+        }
+
+        h1:nth-child(2){
+           color: red;
+           animation: wave 2s infinite;
+        }
+
+        @keyframes wave{
+            0%{
+                clip-path: polygon(0% 33%, 25% 51%, 52% 53%, 72% 47%, 100% 35%, 99% 100%, 0% 99%);
+            }
+
+            50%{
+                clip-path: polygon(0% 52%, 32% 41%, 61% 37%, 84% 37%, 100% 30%, 99% 100%, 0% 100%);
+            }
+
+            100%{
+                clip-path: polygon(0% 33%, 25% 51%, 52% 53%, 72% 47%, 100% 35%, 99% 100%, 0% 99%);
+            }
+        }
+    </style>
+
+
+<body>
+    <div class="wave">
+        <h1>wave</h1>
+        <h1>wave</h1>
+    </div>
+</body>
+</html>

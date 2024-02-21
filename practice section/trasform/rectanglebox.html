@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        .center{
+            position: absolute;
+        left: 50%;
+        top: 50%;
+        }
+
+        .box{
+            position: relative;
+            display: block;
+            width: 210px;
+            height: 80px;
+            background-color: gray;
+            transform: rotate(0deg) skewX(25deg) translate(0,0);
+            box-shadow: -20px 20px 10px 0px rgb(0,0,0,0.5);
+        }
+
+        .box::before{
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            left: -10px;
+            height: 100%;
+            height: 20px;
+            width: 100%;
+            background: gray;
+            transform: rotate(0deg) skewx(-45deg);
+            border: 0.1px solid rgb(0,0,0,0.1);
+        }
+
+        .box::after{
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: -19px;
+            height: 100%;
+            width: 20px;
+            background: gray;
+            transform: rotate(0deg) skewy(-45deg);
+            border: 0.1px solid rgb(0,0,0,0.1);
+        }
+
+
+    </style>
+
+<body>
+    <div class="center"><div class="box"></div></div>
+    
+</body>
+</html>

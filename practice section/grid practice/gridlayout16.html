@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>grid</title>
+    </head>
+
+    <style>
+        .con{
+            display: grid;
+            grid-template-rows: 60px 85vh 70vh 20vh;
+            grid-template-columns: minmax(min-content,1000px);
+        }
+
+        .box1{
+            background-color: yellow;
+            color: black;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .box1 ul{
+            display: flex;
+            list-style: none;
+            text-transform: capitalize;
+        }
+
+        .box1 ul li{
+            font-size: 20px;
+            padding-left: 25px;
+        }
+
+        .box2{
+            background-color: purple;
+            display: grid;
+            place-content: center;
+            text-align: center;
+        }
+
+        .center{
+            display: inline-block;
+            text-transform: uppercase;
+            color: ghostwhite;
+            text-align: center;
+
+        }
+
+        .center h1{
+            margin: 0;
+            padding-bottom: 10px;
+        }
+
+        .center h3{
+            margin: 0;
+        }
+
+        .center a{
+            color: red;
+            display: inline-block;
+            padding: 10px 40px;
+            background-color: yellow;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-top: 25px;
+        }
+
+        .box3{
+            background-color: #ccc;
+        }
+
+        .box4{
+            background-color: black;
+            color: #fff;
+            text-align: center;
+
+        }
+
+        .center ul{
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            margin-top: 40px;
+
+        }
+
+        .center ul li{
+            display: inline-block;
+            padding-left: 25px;
+        }
+    </style>
+
+    <body>
+        <div class="con">
+            <div class="box1">
+                <h3>logos</h3>
+                <ul>
+                    <li>home</li>
+                    <li>message</li>
+                    <li>contact</li>
+                    <li>service</li>
+                    <li>help</li>
+                </ul>
+            </div>
+            <div class="box2">
+                <div class="center">
+                    <h1>welcome to my website</h1>
+                    <h3>lets start your journey</h3>
+                    <a href="">discover more</a>
+                </div>
+            </div>
+            <div class="box3">main</div>
+            <!-- <div class="box4">
+                <div class="center">
+                    <h3>logo</h3>
+                    <ul>
+                        <li>sevices</li>
+                        <li>home</li>
+                        <li>message</li>
+                        <li>contact</li>
+                        <li>service</li>
+                        <li>help</li>
+                        <li>sevices</li>
+                        <li>just</li>
+                        <li>home</li>
+                    </ul>
+                </div>
+            </div> -->
+        </div>
+    </body>
+    </html>
+</body>
+</html>

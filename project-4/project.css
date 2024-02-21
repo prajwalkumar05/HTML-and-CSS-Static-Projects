@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: whitesmoke;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav{
+    display: flex;
+    /* display: inline; */
+    justify-content: center;
+    justify-content: space-around;
+    margin: 12px;
+
+}
+
+nav ul li{
+    display: inline;
+    
+}   
+
+nav ul li a{
+    text-decoration: none;
+    padding: 0px 12px;
+    font-size: 20px;
+    color: black;
+}
+
+nav ul li a:active{
+    color:rgb(241, 75, 53) ;
+}
+
+nav .btn{
+   padding: 8px 30px;
+   border-radius: 25px;
+   background-color: rgb(241, 75, 53);
+   color: white;
+   font-weight: bold;
+   border: none;
+}
+
+nav .head{
+    font-size: 25px;
+    font-weight: bold;
+
+}
+.head .blue{
+    color: rgb(15, 167, 228);
+}
+
+.head .red{
+    color:rgb(241, 75, 53);
+}
+
+main{
+    font-size: 60px;
+    position: absolute;
+    top: 15%;
+    left: 6%;
+}
+
+.red1{
+    font-weight: bold;
+    color:rgb(241, 75, 53);
+    font-size: 20px;
+}
+
+.sky{
+    font-weight: bold;
+    color: rgb(15, 167, 228);
+}
+
+.red{
+    font-weight: bold;
+    color:rgb(241, 75, 53);
+}
+
+.black{
+    font-weight: bold;
+}
+
+.par{
+    /* display: block;
+    float: left;*/
+    font-size: 20px;
+} 
+
+.space{
+    
+}
+
+.space1{
+    padding: 8px 0px;
+}
+
+.space2{
+    padding: 8px 0px;
+}
+
+.space3{
+    padding: 10px 0px;
+}
+
+.box{
+    width: 70%;
+    height: 50px;
+    background-color: rgb(15, 167, 228);
+    font-size: 20px;
+    border-radius: 35px;
+    margin-top: 35px;
+}
+
+.box p{
+    margin: 12px;
+    margin-left: 10px;
+    padding: 10px;
+    color: white;
+}
+
+.photo img{
+    height: 400px;
+    width: 500px;
+    position: absolute;
+    top: 25%;
+    left: 60%;
+}
+
+.color{
+    color: rgb(15, 167, 228);
+}

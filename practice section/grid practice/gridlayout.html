@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-layout</title>
+</head>
+
+    <style>
+        .con{
+            display: grid;
+            grid-gap: 10px;
+            grid-template-rows: repeat(5,85vh);
+            grid-template-columns: [full-start] minmax(60px,1fr) [center-start] repeat(3, [col-start] minmax(min-content,400px) [col-start] ) [center-end] minmax(60px,1fr) [full-end];
+        }
+
+        .con > div {
+            background-color: blueviolet;
+            color: white;
+        }
+
+        .box1{
+            grid-column:full-start/-1 ;
+        }
+
+        .box2{
+            grid-column:center-start/center-end ;
+            
+        }
+
+        .box3{
+            grid-column:center-start/center-end ;
+        }
+
+        .box4{
+            grid-column:center-start/center-end ;
+        }
+
+        .box5{
+            grid-column:full-start/-1 ;
+        }
+    </style>
+
+<body>
+    <div class="con">
+        <div class="box1">header</div>
+        <div class="box2"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dicta aut delectus fugiat ullam quam, et similique dignissimos aspernatur voluptates dolore ducimus? Vel molestias quidem natus qui dolor. Iste quibusdam eos ducimus provident quas, blanditiis magnam porro iusto pariatur expedita error sequi sunt repudiandae hic quisquam recusandae accusamus possimus perferendis! Error quaerat inventore corrupti eligendi possimus magni ipsum? Quas totam quibusdam tempore saepe provident quisquam error et impedit blanditiis, ex, quo exercitationem ut voluptas optio fugiat laboriosam a numquam. Delectus rem quam aperiam, laborum, optio doloremque id asperiores, ducimus perspiciatis impedit amet facere quasi veniam laudantium animi totam similique ratione!</p></div>
+        <div class="box3">main</div>
+        <div class="box4">main</div>
+        <div class="box5">footer</div>
+    </div>
+</body>
+</html>

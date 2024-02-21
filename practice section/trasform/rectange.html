@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+
+        .center{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            perspective: 1800px;
+        }
+
+        .boxes{
+            position: relative;
+            /* transform-style: preserve-3d; */
+        }
+
+        .box{
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            border: 2px solid black;
+        }
+
+        #front {
+             transform: translateX(-200px) translateY(-200px) translateZ(200px);
+               background-color: gray;
+        }
+
+        #back{
+            transform: translateX(-200px) translateY(-200px) translateZ(-200px);
+            color: gray
+        }
+
+        #left{
+            transform: translateX(-400px) translateY(-200px) rotatey(90deg);
+            color: gray
+        }
+
+        #right{
+            transform: translateX(0px) translateY(-200px) rotatey(90deg);
+            color: gray
+        }
+
+        #top {
+                transform: translateX(-200px) translateY(-300px) rotateX(90deg);
+                background: rgba(0, 6, 246, 0.5);
+        }
+
+        #bottom{
+            transform: translateX(-200px) translateY(-120px) translateZ(00px)  rotateX(90deg);
+            background: rgba(255, 30, 0, 0.5);
+        }
+    </style>
+
+<body>
+    <div class="center">
+        <div class="boxes">
+            <div id="front" class="box"></div>
+            <div id="back" class="box"></div>
+            <div id="left" class="box"></div>
+            <div id="right" class="box"></div>
+            <!-- <div id="top" class="box"></div> -->
+            <div id="bottom" class="box"></div> 
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- background: rgba(255, 16, 107, 0.5);
+background: rgba(1, 251, 236, 0.5);
+background: rgba(4, 255, 116, 0.5);
+background: rgba(216, 255, 0, 0.5);
+background: rgba(0, 6, 246, 0.5);
+background: rgba(255, 30, 0, 0.5); -->
